@@ -1,0 +1,28 @@
+task: vabench_aboter
+dataset_path: /path/to/evaluation/dataset
+dataset_kwargs:
+  pre_prompt: ""
+  # ABotER 训练时使用旧版 VABench XML 输出格式，这里保留该 prompt 风格，避免模型因输出格式变化掉点。
+  post_prompt: "Your answer should be wrapped in <Answer><point>[[x1,y1],[x2,y2],[x3,y3],[x4,y4],[x5,y5],[x6,y6],[x7,y7],[x8,y8]]</point></Answer>, where each coordinate is in 0-1000 (normalized)."
+  # 以下评分相关字段沿用当前官方 VABench-P 口径：mask 命中率、0-1000 坐标、固定 8 个点计分。
+  metric_mode: mask
+  expected_points: 8
+  coord_mode: normalized
+  points_mode: fixed
+load_from_disk: true
+eval_split: null
+doc_to_visual: !function process.vabench_doc_to_visual
+doc_to_text: !function process.vabench_doc_to_text
+doc_to_target: "id"
+output_type: generate_until
+generation_kwargs:
+  max_new_tokens: 4096
+  temperature: 0
+  do_sample: false
+  top_p: 1.0
+  num_beams: 1
+process_results: !function process.vabench_process_results
+metric_kwargs:
+  metric: accuracy
+  aggregation: !function process.vabench_aggregate_results
+  higher_is_better: true

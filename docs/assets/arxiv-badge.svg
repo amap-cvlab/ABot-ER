@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="127.33" height="20" viewBox="0 0 191 30" role="img" aria-label="arXiv: 2610.18355">
+  <title>arXiv: 2610.18355</title>
+  <defs><clipPath id="round"><rect width="191" height="30" rx="4"/></clipPath></defs>
+  <g clip-path="url(#round)"><path fill="#555" d="M0 0h63v30H0z"/><path fill="#b31b1b" d="M63 0h128v30H63z"/></g>
+  <g fill="#fff" text-anchor="middle" font-family="Verdana,DejaVu Sans,sans-serif" font-size="16">
+    <text x="31.5" y="21">arXiv</text><text x="127" y="21">2610.18355</text>
+  </g>
+</svg>

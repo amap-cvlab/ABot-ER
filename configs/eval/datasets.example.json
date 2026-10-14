@@ -1,0 +1,79 @@
+{
+  "scope": "Example: replace absolute paths with your downloaded frozen benchmark assets.",
+  "tasks": {
+    "vsibench": {
+      "dataset_path": "/your/evaluation-data/vsibench",
+      "expected_count": 5130,
+      "revision": "REPLACE_WITH_DATASET_COMMIT_OR_CONTENT_MANIFEST_SHA256",
+      "video_dir": "/your/evaluation-media/vsibench"
+    },
+    "erqa": {
+      "dataset_path": "/your/evaluation-data/erqa",
+      "expected_count": 400,
+      "revision": "REPLACE_WITH_DATASET_COMMIT_OR_CONTENT_MANIFEST_SHA256"
+    },
+    "where2place-point_aboter": {
+      "dataset_path": "/your/evaluation-data/where2place-point_aboter",
+      "expected_count": 100,
+      "revision": "REPLACE_WITH_DATASET_COMMIT_OR_CONTENT_MANIFEST_SHA256"
+    },
+    "emspatial-bench": {
+      "dataset_path": "/your/evaluation-data/emspatial-bench",
+      "expected_count": 3640,
+      "revision": "REPLACE_WITH_DATASET_COMMIT_OR_CONTENT_MANIFEST_SHA256"
+    },
+    "cosmos-agibot": {
+      "dataset_path": "/your/evaluation-data/cosmos-agibot",
+      "expected_count": 100,
+      "revision": "REPLACE_WITH_DATASET_COMMIT_OR_CONTENT_MANIFEST_SHA256",
+      "video_dir": "/your/evaluation-media/cosmos-agibot"
+    },
+    "cosmos-bridgev2": {
+      "dataset_path": "/your/evaluation-data/cosmos-bridgev2",
+      "expected_count": 100,
+      "revision": "REPLACE_WITH_DATASET_COMMIT_OR_CONTENT_MANIFEST_SHA256",
+      "video_dir": "/your/evaluation-media/cosmos-bridgev2"
+    },
+    "cosmos-holoassist": {
+      "dataset_path": "/your/evaluation-data/cosmos-holoassist",
+      "expected_count": 100,
+      "revision": "REPLACE_WITH_DATASET_COMMIT_OR_CONTENT_MANIFEST_SHA256",
+      "video_dir": "/your/evaluation-media/cosmos-holoassist"
+    },
+    "cosmos-robofail": {
+      "dataset_path": "/your/evaluation-data/cosmos-robofail",
+      "expected_count": 100,
+      "revision": "REPLACE_WITH_DATASET_COMMIT_OR_CONTENT_MANIFEST_SHA256",
+      "video_dir": "/your/evaluation-media/cosmos-robofail"
+    },
+    "cosmos-robovqa": {
+      "dataset_path": "/your/evaluation-data/cosmos-robovqa",
+      "expected_count": 110,
+      "revision": "REPLACE_WITH_DATASET_COMMIT_OR_CONTENT_MANIFEST_SHA256",
+      "video_dir": "/your/evaluation-media/cosmos-robovqa"
+    },
+    "vabench_aboter": {
+      "dataset_path": "/your/evaluation-data/vabench_aboter",
+      "expected_count": 300,
+      "revision": "REPLACE_WITH_DATASET_COMMIT_OR_CONTENT_MANIFEST_SHA256"
+    },
+    "robovqa": {
+      "dataset_path": "/your/evaluation-data/robovqa",
+      "expected_count": 1921,
+      "revision": "REPLACE_WITH_DATASET_COMMIT_OR_CONTENT_MANIFEST_SHA256",
+      "video_dir": "/your/evaluation-media/robovqa"
+    },
+    "openeqa-emeqa": {
+      "dataset_path": "/your/evaluation-data/openeqa-emeqa",
+      "expected_count": 1636,
+      "revision": "REPLACE_WITH_DATASET_COMMIT_OR_CONTENT_MANIFEST_SHA256",
+      "video_dir": "/your/evaluation-media/openeqa-emeqa"
+    },
+    "unieqa": {
+      "dataset_path": "/your/evaluation-data/unieqa",
+      "expected_count": 5278,
+      "revision": "REPLACE_WITH_DATASET_COMMIT_OR_CONTENT_MANIFEST_SHA256",
+      "image_root": "/your/evaluation-media/unieqa"
+    }
+  }
+}

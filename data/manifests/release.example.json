@@ -1,0 +1,15 @@
+{
+  "schema_version": "0.1-draft",
+  "status": "template_not_a_release",
+  "release_id": null,
+  "sources": [],
+  "unique_records": null,
+  "physical_records": null,
+  "supervised_tokens": null,
+  "token_proxy": null,
+  "token_proxy_definition": null,
+  "ordered_sha256": null,
+  "mixture_config": null,
+  "audit_report": null,
+  "source_license_review": "pending"
+}

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="140.67" height="20" viewBox="0 0 211 30" role="img" aria-label="PDF: Technical Report">
+  <title>PDF: Technical Report</title>
+  <defs><clipPath id="round"><rect width="211" height="30" rx="4"/></clipPath></defs>
+  <g clip-path="url(#round)"><path fill="#555" d="M0 0h49v30H0z"/><path fill="#007ec6" d="M49 0h162v30H49z"/></g>
+  <g fill="#fff" text-anchor="middle" font-family="Verdana,DejaVu Sans,sans-serif" font-size="16">
+    <text x="24.5" y="21">PDF</text><text x="130" y="21">Technical Report</text>
+  </g>
+</svg>

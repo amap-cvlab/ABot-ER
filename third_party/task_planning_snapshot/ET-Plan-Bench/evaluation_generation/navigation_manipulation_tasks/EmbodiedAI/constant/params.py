@@ -1,0 +1,3 @@
+# task
+STEP_MAX = 40
+BLOCKER_MAX = 7

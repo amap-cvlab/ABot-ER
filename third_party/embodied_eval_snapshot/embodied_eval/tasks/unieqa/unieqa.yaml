@@ -1,0 +1,22 @@
+task: unieqa
+dataset_path: /path/to/evaluation/dataset
+dataset_kwargs:
+  image_root: /path/to/evaluation/media
+load_from_disk: true
+eval_split: train
+doc_to_visual: !function process.unieqa_doc_to_visual
+doc_to_text: !function process.unieqa_doc_to_text
+doc_to_target: "answer"
+output_type: generate_until
+generation_kwargs:
+  max_new_tokens: 4096
+  temperature: 0
+  do_sample: false
+  top_p: 1.0
+  num_beams: 1
+# metrics
+process_results: !function process.unieqa_process_results
+metric_kwargs:
+  metric: overall
+  aggregation: !function process.unieqa_aggregate_results
+  higher_is_better: true

@@ -1,0 +1,1068 @@
+{
+  "snapshot_date": "2026-09-26",
+  "source_repository": "ET-Plan and EmbodiedBench integration",
+  "source_git_commit": null,
+  "source_git_commit_status": "not recorded; file identities are recorded individually",
+  "scope": "Official ET interactive-agent and EmbodiedBench evaluation runtime; data and simulator binaries excluded",
+  "public_distribution_status": "license_files_pending_review",
+  "files": [
+    {
+      "path": "ET-Plan-Bench/CHANGELOG.md",
+      "sha256": "2e17cfaa07886811f29306a9d7bc4ac9edaabc289fdbfa5986501c5ea3eb5b3f"
+    },
+    {
+      "path": "ET-Plan-Bench/environment.txt",
+      "sha256": "2682d41c9c743ab8cfe0781dee7354ab861691ef9cb0d1e79f2a1cac41de6c0c",
+      "original_sha256": "00dc274fc5cea04095aafb001b8522a00f70659df0665aa8052f804cdf44dae7",
+      "modification": "Published residual-schema compatibility and portable runtime cleanup; benchmark scoring unchanged"
+    },
+    {
+      "path": "ET-Plan-Bench/evaluation_generation/navigation_manipulation_multiple_objects/envs/env.py",
+      "sha256": "a5940dd2dbfc394c7b6ff1dd8eff8edae7cb8432f2abe3fd107d12cfb4f784bf"
+    },
+    {
+      "path": "ET-Plan-Bench/evaluation_generation/navigation_manipulation_multiple_objects/inference_exploration_inside_both.py",
+      "sha256": "7ab7ddabcd21cbff7c06c7429809f21d3583c127ecea0069ab7c0fc9312788fd"
+    },
+    {
+      "path": "ET-Plan-Bench/evaluation_generation/navigation_manipulation_multiple_objects/inference_exploration_inside_step.py",
+      "sha256": "4c99bd851e59fe45b59e88bf54d29466e2d30488f0a95981b4123fe204c161bc"
+    },
+    {
+      "path": "ET-Plan-Bench/evaluation_generation/navigation_manipulation_multiple_objects/inference_exploration_on_both.py",
+      "sha256": "078516a0057b283719a1b2c3441e8c53ec89f2b20b3cb2ebf81c66f78403fa75"
+    },
+    {
+      "path": "ET-Plan-Bench/evaluation_generation/navigation_manipulation_multiple_objects/inference_exploration_on_step.py",
+      "sha256": "14e7f150b9a79253be5ce3b829fcf488cca6f45fab23b9a9304ee709ac7a5b34"
+    },
+    {
+      "path": "ET-Plan-Bench/evaluation_generation/navigation_manipulation_multiple_objects/inference_exploration_temp.py",
+      "sha256": "303f886459a726ebefc5e1da47dcaa3bd0ad95e9e83bf291bc66705dac1638d3"
+    },
+    {
+      "path": "ET-Plan-Bench/evaluation_generation/navigation_manipulation_multiple_objects/move_and_find_data_gen_by_rule_2_objects_inside.py",
+      "sha256": "f4cd935b66c005e92f2c952349b406049b41c3f86fb9a854764b12368aa07662",
+      "original_sha256": "26912215c2bb73d4925111c3d5a6a86729d36c692734cbd271a460e4e17222b3",
+      "release_patch": "Sanitize machine-specific paths and operational references; preserve evaluation algorithms"
+    },
+    {
+      "path": "ET-Plan-Bench/evaluation_generation/navigation_manipulation_multiple_objects/move_and_find_data_gen_by_rule_2_objects_inside_both.py",
+      "sha256": "086f59d574f309d8430e37689057287c5405dbf29b1dc4f308fa4f1c664a68b6",
+      "original_sha256": "b30bee364533b2be19bdac06da3cef5a00f194afd58bacd686bb58bdca61fc00",
+      "release_patch": "Sanitize machine-specific paths and operational references; preserve evaluation algorithms"
+    },
+    {
+      "path": "ET-Plan-Bench/evaluation_generation/navigation_manipulation_multiple_objects/move_and_find_data_gen_by_rule_2_objects_on.py",
+      "sha256": "086d27c7b7b29144f93d46dd2a728df9a4742a69a4611e41a46a5b8b7bee0294",
+      "original_sha256": "b91a277ffbf80f443fb14348d62b6d08c8604a2a8b84b2a8b70a14101879cb0a",
+      "release_patch": "Sanitize machine-specific paths and operational references; preserve evaluation algorithms"
+    },
+    {
+      "path": "ET-Plan-Bench/evaluation_generation/navigation_manipulation_multiple_objects/move_and_find_data_gen_by_rule_2_objects_on_both.py",
+      "sha256": "4b5f744b966340c5012adfcb97f16486dd3acc2c3c2de0d3bdcbf8f3ef381f9b",
+      "original_sha256": "16bff0a5775ff2005cbb5e61ec4fb75ce38b43bb876a32b75994b2aa018384f4",
+      "release_patch": "Sanitize machine-specific paths and operational references; preserve evaluation algorithms"
+    },
+    {
+      "path": "ET-Plan-Bench/evaluation_generation/navigation_manipulation_multiple_objects/move_and_find_data_gen_by_rule_2_objects_temp.py",
+      "sha256": "9a6240bbfe4bd2357976592a9fa8f0382bdbbe61db0c70bf8767f6dd4a7747b2",
+      "original_sha256": "79cc5e9966bfebad2ad08d327ec51e22e32352152241050226972c51c27877a6",
+      "release_patch": "Sanitize machine-specific paths and operational references; preserve evaluation algorithms"
+    },
+    {
+      "path": "ET-Plan-Bench/evaluation_generation/navigation_manipulation_multiple_objects/tasks/__init__.py",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "ET-Plan-Bench/evaluation_generation/navigation_manipulation_multiple_objects/tasks/task_checker.py",
+      "sha256": "6fabd1be1a8a3f784f2671bbbb43d9df5c367c51349e124a13dfd57df33f0bf2"
+    },
+    {
+      "path": "ET-Plan-Bench/evaluation_generation/navigation_manipulation_multiple_objects/tasks/utils.py",
+      "sha256": "2cd522af05b0cb8d7182ac349471e012ebbe8a604b5165156bafafd9df01fb4e"
+    },
+    {
+      "path": "ET-Plan-Bench/evaluation_generation/navigation_manipulation_tasks/EmbodiedAI/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "ET-Plan-Bench/evaluation_generation/navigation_manipulation_tasks/EmbodiedAI/constant/dirs.py",
+      "sha256": "196f380066cc9dd23a7cfbe73f65966b8a6aeefb4c884f7388c39c343f61003f"
+    },
+    {
+      "path": "ET-Plan-Bench/evaluation_generation/navigation_manipulation_tasks/EmbodiedAI/constant/llm.py",
+      "sha256": "28f73bfaf1f91537b0d065100cf85789e5fb5a41204de085c350aecb97c1e184"
+    },
+    {
+      "path": "ET-Plan-Bench/evaluation_generation/navigation_manipulation_tasks/EmbodiedAI/constant/params.py",
+      "sha256": "a1be3c297bd2930beaa5b31101e6bccc33a5e7e064a2fd336fc6fedffff3fb7b"
+    },
+    {
+      "path": "ET-Plan-Bench/evaluation_generation/navigation_manipulation_tasks/EmbodiedAI/constant/prompt/data_gen.py",
+      "sha256": "b73f774c3a8e22decb58e355561b0e5180fca1878acc141124c81be553510af6"
+    },
+    {
+      "path": "ET-Plan-Bench/evaluation_generation/navigation_manipulation_tasks/EmbodiedAI/data_gen/ground_truth_single_env_single_task_type.py",
+      "sha256": "173e309f04e4193d85fa5e0eb93ac81edd7032296ced4bc8659f9b9e09d2f39b"
+    },
+    {
+      "path": "ET-Plan-Bench/evaluation_generation/navigation_manipulation_tasks/EmbodiedAI/data_gen/ground_truth_single_task_type.py",
+      "sha256": "12e7fff2bd46e9a69149797c78ed572c5513cc9e89a86b2fb4721b4c2b29271f"
+    },
+    {
+      "path": "ET-Plan-Bench/evaluation_generation/navigation_manipulation_tasks/EmbodiedAI/data_gen/visible_abstract_nav.py",
+      "sha256": "a02c21d91e918fff83ce9e0aa231ba12560d26396f0121888e6c5bcee1410d31"
+    },
+    {
+      "path": "ET-Plan-Bench/evaluation_generation/navigation_manipulation_tasks/EmbodiedAI/data_gen/visible_single_env_single_task_type.py",
+      "sha256": "88f2cee883a46993b23cd50dd59bdb2c1c8a312a9aacf1c1630aa41f05f3363c"
+    },
+    {
+      "path": "ET-Plan-Bench/evaluation_generation/navigation_manipulation_tasks/EmbodiedAI/data_gen/visible_single_task_type.py",
+      "sha256": "f5d60b06aafa905e51188bb81d317a8340f55a8613e35704fbe0d1d202f35a48"
+    },
+    {
+      "path": "ET-Plan-Bench/evaluation_generation/navigation_manipulation_tasks/EmbodiedAI/envs/env.py",
+      "sha256": "4c989e87c58fcd8d94727afc2232606e84bbbcc769d7a11e1e0f8acb74fd4c72"
+    },
+    {
+      "path": "ET-Plan-Bench/evaluation_generation/navigation_manipulation_tasks/EmbodiedAI/envs/scene_graph.py",
+      "sha256": "b3c49572f9e8491cb789b5d018020feb5bfa32dbaf8deb594883dd80f9a152fe"
+    },
+    {
+      "path": "ET-Plan-Bench/evaluation_generation/navigation_manipulation_tasks/EmbodiedAI/evaluate/evaluate_nav_mani.py",
+      "sha256": "2f028f46559b9d6c7f406b70641f2100e3b491743e7d4ed868bb582dfc19be93"
+    },
+    {
+      "path": "ET-Plan-Bench/evaluation_generation/navigation_manipulation_tasks/EmbodiedAI/evaluate/evaluate_nav_mani_occlusion.py",
+      "sha256": "8ed0f46d00cc6e932b8cc789d43b773e46d1777020c8a418ca567a5b8154df00"
+    },
+    {
+      "path": "ET-Plan-Bench/evaluation_generation/navigation_manipulation_tasks/EmbodiedAI/utils/eval.py",
+      "sha256": "8c50a1b25f14dde6be4b4b59219c990895548f2eee0aa2c2a383e7f7e09b036e"
+    },
+    {
+      "path": "ET-Plan-Bench/evaluation_generation/navigation_manipulation_tasks/EmbodiedAI/utils/gpt_call.py",
+      "sha256": "1b463b36dda4380966bf5b5f944f8eb0c358b95138b68438291cebace41a82e1",
+      "original_sha256": "bc5f80ecef5903d5063159b55caf1d8a3707d4933807ea5e0b7390eb084aceff",
+      "release_patch": "Sanitize machine-specific paths and operational references; preserve evaluation algorithms"
+    },
+    {
+      "path": "ET-Plan-Bench/evaluation_generation/navigation_manipulation_tasks/EmbodiedAI/utils/helper.py",
+      "sha256": "0e152a45225d9367d2d7e6d8fcab00e6869ca07f3f31f87cb68949f5fec64217"
+    },
+    {
+      "path": "ET-Plan-Bench/evaluation_generation/navigation_manipulation_tasks/EmbodiedAI/utils/io.py",
+      "sha256": "34122067c82a627552cd31fa850c596d89135fd353c3b756f36ce249350857f5"
+    },
+    {
+      "path": "ET-Plan-Bench/evaluation_generation/navigation_manipulation_tasks/EmbodiedAI/utils/log.py",
+      "sha256": "46640431cb0e4489db96b65040d951e075209671661f4eb7c3c1899b6e8a8929"
+    },
+    {
+      "path": "ET-Plan-Bench/evaluation_generation/navigation_manipulation_tasks/EmbodiedAI/utils/robot.py",
+      "sha256": "748964a09e593f838b2e86c2f4aee036efef015e96141682e629032cbaa3f00f"
+    },
+    {
+      "path": "ET-Plan-Bench/evaluation_generation/navigation_manipulation_tasks/EmbodiedAI/utils/robot_task.py",
+      "sha256": "85f8b16f9ebd02b08d258c5ec41977d444a94cebc25f7f977fb974590f963e0c"
+    },
+    {
+      "path": "ET-Plan-Bench/evaluation_generation/navigation_manipulation_tasks/EmbodiedAI/utils/unity.py",
+      "sha256": "6c5df4866f1c07324134eb22f8bd42a94608f2b9d07ef0fec58d8f6bc3450992"
+    },
+    {
+      "path": "ET-Plan-Bench/evaluation_generation/navigation_tasks/GPT_API_KEY.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "ET-Plan-Bench/evaluation_generation/navigation_tasks/envs/env.py",
+      "sha256": "295bafeed9db53ea5607ce41d137bea9e692c5e328887bf9318f5c25d3b6b593"
+    },
+    {
+      "path": "ET-Plan-Bench/evaluation_generation/navigation_tasks/gpt4_navigation.py",
+      "sha256": "f67f32e9b61bd5418b9226c75c629f612bed386db9e2c94f989607da54b733ce"
+    },
+    {
+      "path": "ET-Plan-Bench/evaluation_generation/navigation_tasks/gpt4_navigation_layout_map.py",
+      "sha256": "56b70537cd972c33489aaeca5af43ce9dc6270a1c2b7a6194febea26627d5e24"
+    },
+    {
+      "path": "ET-Plan-Bench/evaluation_generation/navigation_tasks/gpt4_navigation_rationale_CoT.py",
+      "sha256": "0e91e8677777ab8bba764f98c733143977925c7f7d2db4b0883bc0e28a9363f7"
+    },
+    {
+      "path": "ET-Plan-Bench/evaluation_generation/navigation_tasks/gpt4_navigation_with_spatial_constraint.py",
+      "sha256": "0269fe9443aa2e08a148a0bb9a8797a9f23778af4626a901f45737c348ab9a7c"
+    },
+    {
+      "path": "ET-Plan-Bench/evaluation_generation/navigation_tasks/ground_truth_generation.py",
+      "sha256": "e48945779ca588141aaeba528240f9bec21f8a049c4f9228419080566504cb21"
+    },
+    {
+      "path": "ET-Plan-Bench/evaluation_generation/navigation_tasks/tasks/scene_graph.py",
+      "sha256": "77f7fd0def92a9eea9eb92f3c7ada84c9ceaecc43b29e6a26a312a2629e2c459"
+    },
+    {
+      "path": "ET-Plan-Bench/evaluation_generation/navigation_tasks/tasks/task_checker.py",
+      "sha256": "4e12fed22aaac8a742c7f2ae979c5e4be8d67b45d119a8bdedce0d904d5ac33a"
+    },
+    {
+      "path": "ET-Plan-Bench/evaluation_generation/navigation_tasks/tasks/utils.py",
+      "sha256": "63ad428f54a605cdd4c9771212a20149a9c9758ed0564a4581ebaa598ca84ec4"
+    },
+    {
+      "path": "EmbodiedBench/CHANGELOG.md",
+      "sha256": "f78d8a443e1173f7a47f4cb598d3281f000e674ab3357d782f586027952f79a0",
+      "original_sha256": "6f60fd60bb00eecfbe26bdd80d25388f4ce3b371275307fa3519a5938ba31a67",
+      "release_patch": "Sanitize machine-specific paths and operational references; preserve evaluation algorithms"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/configs/config.yaml",
+      "sha256": "2f852fb12c633fa5d38bc77f9a1baf750cb428d6bde1c692d89f63db1ceac8e6"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/configs/eb-alf.yaml",
+      "sha256": "d44b3bde2196aac1c342f4a6afa41c2ce2621c0fc9d1e56276d18256a51347c6"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/configs/eb-hab.yaml",
+      "sha256": "fc66ba766a97bccb27b1fc6405da58bc1adc3d8ff885c470462ade073c589274"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/configs/eb-man.yaml",
+      "sha256": "f338e890e36974ecf688c74533805348b06a3fa3d594869ee8603a28704c2cd6"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/configs/eb-nav.yaml",
+      "sha256": "b5c4bcbc3dc61c62563a7fbc8d19c8bc00073f94831d7dfbfea9c5a41d52823e"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_alfred/EBAlfEnv.py",
+      "sha256": "88f7f628703fd8cad69bf35480ea3e3bd2bd66b942692abfa0ad5ae0519c1df8"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_alfred/env/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_alfred/env/controller.py",
+      "sha256": "f3fa5f6f3e8bc473491568b5feb0e0c53ee0e6a6b72ff5fc6dfd4b5fcd85c633"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_alfred/env/reward.py",
+      "sha256": "6cadb9afe1dfc5c6b05d06983960aeb0a68039221b4f90b05058266cfbd294cd"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_alfred/env/tasks.py",
+      "sha256": "e86ef885c547e35114b28494e19b4e351dc7bbeb4b1d2bd571d302d01ac36cd3"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_alfred/env/thor_env.py",
+      "sha256": "701f70de0264070fabeea4fe0348576351e44b07e9e689bf54078ed8358a2dc8",
+      "imported_sha256": "d6cee7f34f85d74f2a079d0ec84c7b991a2bf2192ab3c26f1896bb2bcae9bddf",
+      "local_change": "Operational portability/safety only; see PATCHES.md"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_alfred/environment.yml",
+      "sha256": "550096d517e89b98240ae7e98640986a13ae3e4a60ed2e39e99711341f7e62a3",
+      "original_sha256": "a5bdeed94ce3cbbe4f01d763f83b4bd21d08ce00b230260d6b4295f304783226",
+      "release_patch": "Sanitize machine-specific paths and operational references; preserve evaluation algorithms"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_alfred/gen/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_alfred/gen/agents/agent_base.py",
+      "sha256": "dab0a51c94d6cd74acb5327a0b122787ff70ff28b5d9aca0f307fb7102fb1a3f"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_alfred/gen/agents/deterministic_planner_agent.py",
+      "sha256": "6a7977c5a19d46af3d8b910a8aef568401753b919e38f62ec367b9b36457acdd"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_alfred/gen/agents/plan_agent.py",
+      "sha256": "1dfc19dfa7fa52c05d7771c956114d97535d06049cdb707ad0d35e941eaeb3ae"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_alfred/gen/agents/semantic_map_planner_agent.py",
+      "sha256": "071e5cdc99e978a03e12e90d816bac7d6b96a8a7a200d4c6ffd0b7a94b5c07fb"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_alfred/gen/constants.py",
+      "sha256": "8fb6b92c48bdf383321672e269b1d2e76ded2a966639fe118c1b5d0db04fe98d"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_alfred/gen/game_states/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_alfred/gen/game_states/game_state_base.py",
+      "sha256": "d691444e86c0653893b565cfb8f35260a02d79871504a47670226176f8174407"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_alfred/gen/game_states/planned_game_state.py",
+      "sha256": "07ce957b15ec00a3531a4e4993a649129a3bc2d888beb842d203b33aba758547"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_alfred/gen/game_states/task_game_state.py",
+      "sha256": "9c7a56213b6389c52858a40e84dc6477f81ca8c4230bf176d60514ddc52a9553"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_alfred/gen/game_states/task_game_state_full_knowledge.py",
+      "sha256": "51669da452a3216b4b2539367cfc23fdbbdd57196142045a67d16b05d0c565cd"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_alfred/gen/goal_library.py",
+      "sha256": "faac3e4d3ac7c8d3355aca16bd945fec4f1c83951cf9ab3ce021d091647d2c57"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_alfred/gen/graph/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_alfred/gen/graph/graph_obj.py",
+      "sha256": "485e0f4188e5da51c46757ac57548edfdaf5de676ee19a22b6a17a821d7d04fe"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_alfred/gen/layouts/precompute_layout_locations.py",
+      "sha256": "6093e97d9d97a728da38cefee8ff4a80fca1618148b5fd8607f94324bcd7c020"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_alfred/gen/planner/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_alfred/gen/planner/ff_planner_handler.py",
+      "sha256": "91ee688b003eb96a6ec987aec8668af1bee461d3db23d753cf86fa507a1af42f"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_alfred/gen/scripts/augment_trajectories.py",
+      "sha256": "f142370da7ff408cbb2b5a472f6764fd480487944d865a2272d68c0d8223effa"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_alfred/gen/scripts/generate_trajectories.py",
+      "sha256": "6649986742e6eb254176e1c4a73485cd396ad6146ff86015fdecc1809cd55f8f"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_alfred/gen/scripts/replay_checks.py",
+      "sha256": "70add78d5d419b28b27135483b7e12c9658bcda56d68167fb36f0700d09277be"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_alfred/gen/utils/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_alfred/gen/utils/bb_util.py",
+      "sha256": "d0d1d11a94a6fc252d88d2f253a5841f5bd5e97360bc8ec36f0c8c36626e39aa"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_alfred/gen/utils/dataset_management_util.py",
+      "sha256": "bc2317ef74bd4491407d47263cfdabdbed0a84ef512d84c3a09011e129ee42fa"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_alfred/gen/utils/game_util.py",
+      "sha256": "33fa19735e8bc5c9a8220ceeea2ecaaa242daa55aa13f0b773c290e67fa55640"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_alfred/gen/utils/image_util.py",
+      "sha256": "0702f0be36a64ee973f8020f82e8da32f2cb9e6210428dd46032084dad5a47e0"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_alfred/gen/utils/py_util.py",
+      "sha256": "877db82a5b7be5394227e6384c6bdb6f210112579930cccab0c0496b043bdef3"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_alfred/gen/utils/replay_json.py",
+      "sha256": "7396d37bb6fe2e811d62862872d19eb6a1641b80f8f0aab52259569a86cd143f"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_alfred/gen/utils/video_util.py",
+      "sha256": "e64dd31eb75898445ee56cd0069751f6411200bdcabebe17902b0459f1ee76e0"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_alfred/models/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_alfred/models/eval/eval.py",
+      "sha256": "99d95e22ab48612c13ee3ad14c226a4ea54c66e564f227d2a52ae97297a40744"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_alfred/models/eval/eval_seq2seq.py",
+      "sha256": "cf22c939c3f6713db1405125297e65ea6ba47c5a61a31099418d5003b4036a12"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_alfred/models/eval/eval_subgoals.py",
+      "sha256": "677e69af04ff1a42ba51547e545578e6aa02d1c4f7ff3e175acccaf10eb31555"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_alfred/models/eval/eval_task.py",
+      "sha256": "41239df00048e88b46981d1926e85768b795992de0e79e880691b8825b35e213"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_alfred/models/eval/leaderboard.py",
+      "sha256": "2d3b05e9c6159e91913139e7a0b2b50d74acd4aeec6af5d062d72edb8ccf748b"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_alfred/models/model/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_alfred/models/model/seq2seq.py",
+      "sha256": "4a2739519648412b93d77195a6cf5801f92ba5308d06a9e623eb1c3e89296a44"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_alfred/models/model/seq2seq_im_mask.py",
+      "sha256": "dcf48a0361726406fa5ada1766541509f6b5a6908add369732db15580b673f8f"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_alfred/models/nn/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_alfred/models/nn/resnet.py",
+      "sha256": "0656355c1799282b1ee8974c8e7d5b68fb49d3eb5265e25b412c426af0bebd74"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_alfred/models/nn/vnn.py",
+      "sha256": "0fb29ecbde84b041e9311b2d8551cf6e1493c8e8b5ddef8f339ca823726ddce0"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_alfred/models/train/train_seq2seq.py",
+      "sha256": "0a381d8db8d0385dce8bc93496f08c018f400e8c54993ff1536fd0c6d4e2c0fd"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_alfred/models/utils/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_alfred/models/utils/extract_resnet.py",
+      "sha256": "3f338b3229981fe92aef6c2470b572ab2bbf9eb4a95f04c9dcfb3c23b904033a"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_alfred/models/utils/helper_utils.py",
+      "sha256": "a2df1126d4dda4aa2993a4c0d5477f107ffaefffb9a578363eea757dea5f11d8"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_alfred/models/utils/metric.py",
+      "sha256": "ac41c62f9be685746ef38114b78be66a48f1fb5bd4ac3bc15535abe663321c74"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_alfred/requirements.txt",
+      "sha256": "186fcd67cd1260cf1780266343ff2fff282fa0b365ee61b424548897054cbd81"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_alfred/scripts/check_thor.py",
+      "sha256": "bc91ebb74c38e5805d859a548adfc243622e0c7aa59d0530b396ee84ac4b950b"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_alfred/scripts/docker_build.py",
+      "sha256": "ee4b3418fb984f0c6c71e5f01e6f439ea9493703aa22705d85635ba340482f11"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_alfred/scripts/docker_run.py",
+      "sha256": "f426f9df6d7a0b162caa9aa930d039dcaaff8d2a3e7c763f958c5d299b83449b"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_alfred/scripts/startx.py",
+      "sha256": "414b91fbb9112f816383d013a21e590135689707c9d2ee6f5d0dbf70540e3a7b"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_alfred/thor_connector.py",
+      "sha256": "cf6d853b09a4f79c90054e4cca9baea4d881190a3a3132de1dad8fbf9cd1b232"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_alfred/utils.py",
+      "sha256": "6e17cf51cc13fd65ed101b01b637fbff55f4f5738a17de1cd16e3ac1108204e1"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_habitat/EBHabEnv.py",
+      "sha256": "aba8ef670dcb9bf5ae6ef744d4792eff1c8e905a2c6a06c894635e90a24f372f"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_habitat/__init__.py",
+      "sha256": "1d4f43479deed969372b32b48d4c0c1401482821b64923c50005b903dd6d00cc"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_habitat/actions.py",
+      "sha256": "28b74561ca9935ac658151968be2429f664c64b868e86e1e064cb6782ad89c40"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_habitat/config/__init__.py",
+      "sha256": "c62e468a67898dba47f9fabca273d46b8f48c7d5db2b7941f77cd1ac9ebb2aa1"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_habitat/config/default_structured_configs.py",
+      "sha256": "158fb10c23cecaad794e57ee5462e3e3e1dcfb6152b6772b05a48cc499d65fe3"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_habitat/config/task/dataset_v1.yaml",
+      "sha256": "05249f31ceb7c7a9e09110ebaf7bfdee59370c5dda9f15a86ef2197778a264fd"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_habitat/config/task/language_rearrangement.yaml",
+      "sha256": "4ba2a0ecf9720e8348b1b1f2a16ba4848643d8be08644f436f4e7f60d0c536d0"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_habitat/config/task/pddl_domain_replica_cad.yaml",
+      "sha256": "d62aa2ed4c3d245ca5670c60e4a8132cdb15911d52bf9db33fcd994ef7469c03"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_habitat/config/task/task_obs/visual.yaml",
+      "sha256": "740bcc23c350befbaf5236df14e2b0d1c91715c037da93647d70198af21b1a34"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_habitat/dataset/__init__.py",
+      "sha256": "17a441104e472756e33640fc10c7ec93bd6d57ece08b2ef1d1cc7c368cf71e2a"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_habitat/dataset/combine_datasets.py",
+      "sha256": "8c1a8ff62ca59bb2ec5c205d4c96aec10224172c958f3a29d115281f0becd92c"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_habitat/dataset/configs/dataset.yaml",
+      "sha256": "abdd8bf6e03dd4f459f5a10acbc51563c6c9f27407cd7a7c63d4b972aac16cdb"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_habitat/dataset/configs/instructions.yaml",
+      "sha256": "f88bf06d93c25f1d03b1932476815cc4ab08871dc567ba7b6f1a05741b207e89"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_habitat/dataset/create_episodes.py",
+      "sha256": "53946d36e4849a3fa2f327b1d1c749b1eb94ae8c2e72bdc3611f8ad15a1a96a6"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_habitat/dataset/dataset_validator.py",
+      "sha256": "d19ff02e30e3143b108332732ceb7732c0f8008adf6965bd415e19cd212f47b0"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_habitat/dataset/demo_dataset.py",
+      "sha256": "940afbd6a24a68987544c456032b39e0b07f4d90ba47f70ca50b38dd83a2654d"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_habitat/dataset/episodes.py",
+      "sha256": "bb654caa4542247557888e9b50afd59880cae96e5d9e9be3fd669a0f024f0ea7"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_habitat/dataset/generator.py",
+      "sha256": "11ad3d6e48b41c0224066368cc44f97dd8d2a2cd528c5954b108c544decbf143"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_habitat/dataset/inspect_pickle.py",
+      "sha256": "259a279bbcdca42ac5210eb8ed251990405045c4a113c5c57961510b35d96974"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_habitat/dataset/utils.py",
+      "sha256": "180efea7d9512ab0a02ec8a38b5a7ee394d17ca03604b64715e6f96ec8ed0005"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_habitat/measures.py",
+      "sha256": "073fcf349dd4741a2fe23aecef0ac3cfa3c262b66f7acae296e97047bd57bae0"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_habitat/predicate_task.py",
+      "sha256": "df56ff9d25eee30376d4b252c574c70c5cac87fced0bc97484800a43567b8ac8"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_habitat/sensors.py",
+      "sha256": "e7a29c40af9a947ac1b7fb9ead68d547062ed0baaadfbd2ea892167358d0498f"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_habitat/utils.py",
+      "sha256": "dbdbc7f94b234de718e48ca1589b92d607096db2508aacf17b7681673b08ff20"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/EBManEnv.py",
+      "sha256": "2422c9e8f9e34eba418275672caf5a12a9ccff1ae4970a7248f2d6127103c816"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/amsolver/__init__.py",
+      "sha256": "5a647a6007f02b3cfa5e189ff254195b0f23be5f6834dd39dd0c4cfd397d3ad6"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/amsolver/action_modes.py",
+      "sha256": "c1de853894d6f71cb57843286792fd1ffe7327df49e187a96918d2ab971ac617"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/amsolver/backend/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/amsolver/backend/conditions.py",
+      "sha256": "05540873a9688448e5a11524048151638b2bf865f7c0066954f6e7e239d4bfe9"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/amsolver/backend/const.py",
+      "sha256": "62b2e291cfe629eeccf9bd26e3ef19b3a8a9c0d8eeeb01d8c08c84847cdaf926"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/amsolver/backend/exceptions.py",
+      "sha256": "835e10b3bd1b76bccd8f24ff57d04a60dee2f5534d809ec6eb104bc019e77aba"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/amsolver/backend/observation.py",
+      "sha256": "75a984a6ba8f27f6822d7bd4047ec978454d51b382308dc1936f5205ca77285a"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/amsolver/backend/robot.py",
+      "sha256": "d70263fb2a4c9213cb961e529252f0bc2d728dd81042b953426543d1a31c86e3"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/amsolver/backend/scene.py",
+      "sha256": "ea3510370631b8490a285b427e42a21a0bd5a14c937863b5018b488129a6775a"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/amsolver/backend/spawn_boundary.py",
+      "sha256": "22bb89f843b0b26517d80521ff082ffed1772c1a8e5159f8a43429dcc44c094a"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/amsolver/backend/task.py",
+      "sha256": "6093403b00f4e491adc7a11e99ec3bf894c68b7938af067b5f23db755a0df984"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/amsolver/backend/task_utils.py",
+      "sha256": "f54616796c63300231a0c11e9cda08ea5f9257306d931e5a378356d8240c78a1"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/amsolver/backend/unit_tasks.py",
+      "sha256": "c374bd1931557b482b167e2182053cbee2a1056aa6b4b5b94a455dcaf859fe71"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/amsolver/backend/utils.py",
+      "sha256": "9d2e71515757e2b5ec0a756271dcee82fca6bad84abe743f152f508631c7ed51"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/amsolver/backend/waypoints.py",
+      "sha256": "20632ccf97b21cbf142923d99a42a4b6f9ffbf0d3575a5a5a19da1d49b982a0e"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/amsolver/const.py",
+      "sha256": "2ed6c2301bb7e1e0761e016d5543a29eb230d86d764c7be3c60af7d9e91627c2"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/amsolver/demo.py",
+      "sha256": "6182f1f2f78c2c07817da2cc63f878a16e6a1c7e723dbdf2374dcbc40c72d211"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/amsolver/environment.py",
+      "sha256": "4c9e41eeb4c725873b2fa0378264d642398988a46b217ff17351855a3eb2f336"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/amsolver/gym/__init__.py",
+      "sha256": "13557606e7621db2ee103e572145bbce42f26cf4070688a22ab1fa92e10f4915"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/amsolver/gym/vlmbench_env.py",
+      "sha256": "3e9ce38eb32f71747a11688f9a312ebddafaa609db2d03ee5ec8f66ad7b76e97"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/amsolver/noise_model.py",
+      "sha256": "8676a897bbc67a7f572a75b4b2d049765c32cdb612bd100bab38ff1aeea0634c"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/amsolver/observation_config.py",
+      "sha256": "22f4a74283c9644306b4c83b559a7ad54b2786c2c09fb6d71c097440b3e59e86"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/amsolver/sim2real/domain_randomization.py",
+      "sha256": "acf6bd841f6f32e8cf863ba417535cfc48df5238e54bd29eaecce292da14abc2"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/amsolver/sim2real/domain_randomization_environment.py",
+      "sha256": "d04760817f2c32606a30f4a04fcf7e1bf85d514e788eea4e5416b0b47511f05b"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/amsolver/sim2real/domain_randomization_scene.py",
+      "sha256": "bf92d73e2cf02eb4e254c9773ad8e561d2af6da37dda0bf4c5d82814e306d00d"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/amsolver/task_environment.py",
+      "sha256": "cc74d57a9b5c1bfaa66e72f3960c16363401983ebafe99bb60e9943783628f1e"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/amsolver/utils.py",
+      "sha256": "0e49f08fe2a1fe51dea11a35dc5011b435456f41ff3326a1156f595a3ec20dca"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/eb_man_utils.py",
+      "sha256": "15ae5629bfafa5deb6cc9db15d33b96629b9c0af3d38f4c968e42711758c9bf9"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/requirements.txt",
+      "sha256": "9349dcf81b30adff4463eb81a8e8b6834478408c845772f2a20b0ac147936566"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/setup.py",
+      "sha256": "af408e38c63dbd5eafef19fab7a205c748639eb5f34352cbea8ca344cc99adc7"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/tools/assets/task_template.txt",
+      "sha256": "f7bce9a4fd087ea38a69cf874cabe79088bef386f187e3b04bdbd4e314141f4a"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/tools/cinematic_recorder.py",
+      "sha256": "81faf515a6e7322aac81c8a72132dc21f2cb55670b815ab742210c7ab1898397"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/tools/dataset_generator_NLP.py",
+      "sha256": "0747cc8ea9a91fd9a620084d936efee41071eca100e013e5c0b2bc362d4845c5"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/tools/grasploc.py",
+      "sha256": "afc0a659146fc809b3aa977ebd37231ef821747083e2cd168a3a00b382c760ca"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/tools/task_builder_NLP.py",
+      "sha256": "5f338813f2c1a12801dfff9f689540273ef5a59c6e861a2bb44799e1545ef797"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/tools/task_validator.py",
+      "sha256": "772fff05fabeb54d78869cc6e703f2ff9f8a03a9af9dd8132b7fca018e7a3b55"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/tools/test_config_generator.py",
+      "sha256": "b2527bb8d87035857f52ffcb3ccf0399643d4ac66e816b010d0b540e6a665e55"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/vlm/object_models/save_model.py",
+      "sha256": "eaac5821c9d093e2014797f00ebf5c108c66f771bf5dc9e90ad31336a35990e5"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/vlm/scripts/VLDataloader.py",
+      "sha256": "06d1837a42939d6bf2d113211e18d14e3dafaf863c961e90cd07357c6473f7e4"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/vlm/scripts/cliport_test.py",
+      "sha256": "1efe01d9d2bebd656f5ed4606f438dfaf6c5cafee63169601c6e8c9e65c30830"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/vlm/scripts/eval_sampler.py",
+      "sha256": "7468b93eec0c9e3402272c3000b2e4de3f5ecf7b15e08453eb8849c2034ef3db"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/vlm/scripts/train_baselines.py",
+      "sha256": "21df87cc0641248035e34c431db1a890ac85e96dddfca33dcc7037b90674de6a"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/vlm/tasks/drop_pen.py",
+      "sha256": "6a0668ea773b942cee382839980cdbc699e942109b2ab70468e51ca4d9c42501"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/vlm/tasks/drop_pen_color.py",
+      "sha256": "529234cc8f1b8dc7948715ced1e70cfce41e131aa135c0cf3f963c43b8c7d4dd"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/vlm/tasks/drop_pen_relative.py",
+      "sha256": "a71a9ba093999369e6c702a75f36f0e2c3689810c4bfbfe024608b5e9f370e35"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/vlm/tasks/drop_pen_size.py",
+      "sha256": "4ed41c49b34c7ce821d33cae972678eba7665957ffbf5c431ef3115bd6e8e2a2"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/vlm/tasks/open_door.py",
+      "sha256": "04bfc75d407d9d8c78545f9ef1161acae5d63a4805d4ecb66b38e928d0737207"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/vlm/tasks/open_door_complex.py",
+      "sha256": "cabd335eeab9d25935db69dfb6a1d985d666a77274333660b9640aa0b37e75fa"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/vlm/tasks/open_drawer.py",
+      "sha256": "75fd8081f4c6b075c32a89ea9f276b68c694f0cb38206f4909e963f26e0f530b"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/vlm/tasks/open_drawer_cabinet.py",
+      "sha256": "5b496f1089345f4a5be4809a666a3fe2924bca01e3aa0780a23c1740b3b1fc9a"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/vlm/tasks/pick_cube.py",
+      "sha256": "2024c2c8514c39fef855f771f24dcf718aae8515c387c54988dad578ccbe7b18"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/vlm/tasks/pick_cube_color.py",
+      "sha256": "5f34d63639c880f2a83d17e04ffcf239ee6e8d7d45558a76adafc01a7a6d4d52"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/vlm/tasks/pick_cube_relative.py",
+      "sha256": "ffafc2b21dc84e86b6fa9971091cc9b532a40893f7fdcaa855295861de2879c1"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/vlm/tasks/pick_cube_shape.py",
+      "sha256": "016aae118c7d9cebabdd14202565e2bd08541e074b662e89373b5d2538294a20"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/vlm/tasks/pick_cube_size.py",
+      "sha256": "0ddba5956932f18c61a51d882e2e359567b81abad1151b0394ab23537c6d0b47"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/vlm/tasks/place_into_shape_sorter.py",
+      "sha256": "9073789aabd5e0d95c8c4921ea27422201fce90e736d856e755e5fec6462da19"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/vlm/tasks/place_into_shape_sorter_color.py",
+      "sha256": "13be84ffc543ae973d080e531d1713a7489355739f168b1fcd4dcd89dfc21dc9"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/vlm/tasks/place_into_shape_sorter_relative.py",
+      "sha256": "c89709f12b98f3a74e1a11ee55d37a31d7b1c1db7d8c5597b44b03b06b01d183"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/vlm/tasks/place_into_shape_sorter_shape.py",
+      "sha256": "cd339cca1c6629f44856200aba8f30ea0ee9c3d008a4d9d2428071fda7e05ebd"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/vlm/tasks/pour_demo.py",
+      "sha256": "287716d485ae98bf3406b544043e843c4730e49b5866a995f635c94f66dbf4ee"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/vlm/tasks/pour_demo_color.py",
+      "sha256": "4978227f35a63d2a6681ea4cd2c5a403c764ec6d5c12ab2f596d49f24702c8fc"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/vlm/tasks/pour_demo_relative.py",
+      "sha256": "086f9790bd9fb3bc54b4529a87e8fcaf93264c3e3476bd421512fb5359dd4b7e"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/vlm/tasks/pour_demo_size.py",
+      "sha256": "bed8e312a1b68c154acde1cd8cbc00cab5091e233ece12c3bd1f2706ba74cc28"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/vlm/tasks/stack_cubes.py",
+      "sha256": "dbf303e4226102b05b0aaf095310e133fd62e9da27a5677ed1d8cff09de77a13"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/vlm/tasks/stack_cubes_color.py",
+      "sha256": "20102332788ffa22890e721814d8298352bcacc0d8567a39df30f66a96c0902d"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/vlm/tasks/stack_cubes_relative.py",
+      "sha256": "29fe3a954d73838e1e7e682177351c63f5740ee9356522713c45cd24e5f287a3"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/vlm/tasks/stack_cubes_shape.py",
+      "sha256": "2939f26d0446805086df8226e7a314ce5098cb5b70e67998c055107f296994b3"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/vlm/tasks/stack_cubes_size.py",
+      "sha256": "d9535345f0f6b3d5c3b5e4dfc691efc7109d5be19c8748a13dfe967d42dee6e8"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/vlm/tasks/wipe_table.py",
+      "sha256": "76a396884aef3d13e23f020b5e4fed0bdcdcf825fd838f1ca79c638230a06012"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/vlm/tasks/wipe_table_color.py",
+      "sha256": "59d50d58c74ee04e805db1f236b65fa9073627e7c9bf2ced876234067ad380e7"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/vlm/tasks/wipe_table_direction.py",
+      "sha256": "82be1d8d6c54aba5a3db846c30b448205ce8a22bfe63da7f00a82336af3c0909"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/vlm/tasks/wipe_table_relative.py",
+      "sha256": "b7df7d4ca654077386ccc4787a35f8cf79c6fee56e37b749bbab96cf26632ac8"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/vlm/tasks/wipe_table_shape.py",
+      "sha256": "38a78233afa319d5faec0878c0841ff05b529606819b3898936e834a9368e06b"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_manipulation/vlm/tasks/wipe_table_size.py",
+      "sha256": "368dd97c7c7812e72b01cb0588f6490e4397bfb36e02d581145803be179ecfda"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_navigation/EBNavEnv.py",
+      "sha256": "2e127bcc69d5716239afd763f7d0db705a581674d949e558a34d8bb49ee977c2"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_navigation/Gen_data/base_task_gen.py",
+      "sha256": "e94124b6f843473816573ccaa08c68dacd5d169a521694f818320edc60b6a34f"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_navigation/Gen_data/longHorizon_task_gen.py",
+      "sha256": "5a544fa93914121c2714b97bf616d5d3d49b5a8a0509e38e8133cddb118b6ae1"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_navigation/Gen_data/subset_task_gen.py",
+      "sha256": "3853bab7401c9c3fca5d812cd1f4be721a9cd167290199cf642e87da6f53eb2e"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_navigation/utils.py",
+      "sha256": "8667948c2010ffd622c8ef60a38f17d88a7463c593b5c217eb8908cb29684fac"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/evaluator/config/eb_manipulation_example.py",
+      "sha256": "c27e36bad4f4b5c63e9ce4da1ba1f83b65b83792a0fb013a438f31dee011ecc8"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/evaluator/config/eb_navigation_example.py",
+      "sha256": "fdfa105e24735ebab1ef454f370667ed99de869f18330e8d9a8328a08eaa3023"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/evaluator/config/system_prompts.py",
+      "sha256": "b42deeb6a9cd868bc7883668caa68599ae5c0d65af86456cc17b434e86ded86a"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/evaluator/config/visual_icl_examples/eb_navigation/ebnav_visual_icl.py",
+      "sha256": "07a536341c53f1ad16e3b1897a5aa0924a846bc68ab0c4211b5fd889e63dcf25"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/evaluator/eb_alfred_evaluator.py",
+      "sha256": "6c75484a306119061679825fad81b0d4298e2d36ec48d725f4db337b35c1e752"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/evaluator/eb_habitat_evaluator.py",
+      "sha256": "ce00091c28e9c316bd84e421f9b896d5f90e4e76ddec76c384dceafbc46108fd"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/evaluator/eb_manipulation_evaluator.py",
+      "sha256": "cb978ac33d04eba4bda6e093756f7fc8e208da7e48d45cc368ea9f4387f2d6d0"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/evaluator/eb_navigation_evaluator.py",
+      "sha256": "213864889a8675242de8528bd06c8c74d2825850cf654c2ead456d90ebc0eeeb"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/evaluator/evaluator_utils.py",
+      "sha256": "1da4bc33bc37b52c355fbcb9bfe73a5958aee673cf709089700fd17c711dffd2"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/evaluator/summarize_result.py",
+      "sha256": "82bad0a05559c78144db86feabba1e758d626653d5a2f28d403c6addda47eacb"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/main.py",
+      "sha256": "f93e1c01dbcfd1d8f695100e53e130b62bb1f518777ebcd49df9d8508d780cca"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/planner/custom_model.py",
+      "sha256": "859aec10901f212f58bc68e9ba10d5e1ddfbfe46e8fd1447d3af2e2ebea6ca72"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/planner/manip_planner.py",
+      "sha256": "7deac86edd7e4a6a1a7e65ff75396f37a0001eb7a30982b965283afd4d043e68"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/planner/nav_planner.py",
+      "sha256": "dc10c7923588899548ddbb75515e9693f89f19d720eaace6bff93e5d3b0fdb79"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/planner/planner_config/generation_guide.py",
+      "sha256": "ef17ebc2dfca3295f293acbef64a3cd682c640b527909c1efa19fa161354794c"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/planner/planner_config/generation_guide_manip.py",
+      "sha256": "9f8fe48e2bfa5ffd362980fe3c50fc13a2d480de2c8fc98c1b1273c7a480b503"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/planner/planner_utils.py",
+      "sha256": "104d09434f5d3a56995f9ecd5dab260443e3622d3f4b14fbd8184ea7d0f60eaf"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/planner/remote_model.py",
+      "sha256": "b333c4c83c3ab70166ec463d1477c6898d3822dda0ea42fee926c698230a4e4f"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/planner/vlm_planner.py",
+      "sha256": "7d3a788649a4912b067b1ebe1f6d9e654ee5c95aa010f5ef147d0f0d6abd56a7"
+    },
+    {
+      "path": "EmbodiedBench/setup.py",
+      "sha256": "d270cb5cfaef6d95f4abc1b1c70ac2433362b20066770f80af8e1db8a6e1b5af"
+    },
+    {
+      "path": "UPSTREAM.md",
+      "sha256": "4d9f97bcaa0453cfdc6449012e5bea532cbec6b7299c61e5b966717c5b95086b"
+    },
+    {
+      "path": "scripts/__init__.py",
+      "sha256": "440555727738731bd07867da1db32c5daf4d3592d931a295a4717e51bb6d9646"
+    },
+    {
+      "path": "scripts/analyze_checkpoint_errors.py",
+      "sha256": "327a6765a8a1d6333c1ddb7463e823400a24efff09a08e47a8bb69ad2bbb9bd6"
+    },
+    {
+      "path": "scripts/collect_runtime_artifacts.py",
+      "sha256": "df0b8e3214987fade8a870c4fd72095002120eb6d0a58f2249b0acf6917ad0b1"
+    },
+    {
+      "path": "scripts/dhta_runtime.py",
+      "sha256": "c3d8299cff586837feccd09c341f21885c959d74e0ef5c99f4c72e64a0a20d6d",
+      "original_sha256": "fcf5b59479d9539a1167827bc51a5c23cb2a63f707430fae47da3851f4b8fd30",
+      "modification": "Published residual-schema compatibility; reject unconditioned evaluated models; benchmark scoring unchanged"
+    },
+    {
+      "path": "scripts/et_plan_navigation_sample_runner.py",
+      "sha256": "6f19a5edc093f7244034655e7ef9f20c7d06a24d43f610453850618a3aa7d381"
+    },
+    {
+      "path": "scripts/et_plan_official_agent_predict.py",
+      "sha256": "73d571ec20ef59b4a49879ffc997dcda151e3acf25c3514ed7232851dd960a64"
+    },
+    {
+      "path": "scripts/et_plan_official_score.py",
+      "sha256": "c8fba57ec3c82d94df8402f02fdb46e55175fd09ee132526e1ea3c7298ee2b77"
+    },
+    {
+      "path": "scripts/finalize_full_eval.py",
+      "sha256": "5a220e146b65211814058cd8b8eec54ce427ce006c0220e46d272cc1434cdae7"
+    },
+    {
+      "path": "scripts/full_eval_retry.py",
+      "sha256": "ea2ca990db7fc607b05cc2b70514975cc9ee188426e4656976f67e416ee4daf0"
+    },
+    {
+      "path": "scripts/full_eval_status.py",
+      "sha256": "7ac8ecc1513baf2890a931fd463029893fc51c26ac4aa9ea22df892e2f91b9c6"
+    },
+    {
+      "path": "scripts/merge_task_planning_full_summaries.py",
+      "sha256": "0e2e225abf182e2dca10c2ec77b483e13e5c06da2e006a2017df8008cad9f245"
+    },
+    {
+      "path": "scripts/qwen35_legacy_chat_template.jinja",
+      "sha256": "e84f32a23fdda27689f868aa4a1a5621f41133e51a48d7f3efcbea2839574259"
+    },
+    {
+      "path": "scripts/qwen_dhta_eval_profile.py",
+      "sha256": "eb3e12637b1cbed0727e91432c508312a4b32491b50aab937b9465ee3fba29fb",
+      "original_sha256": "d00223474c0982ec79bf405f140e7d0e2bb5f9d06723d5ea08146c387ba88076",
+      "modification": "Published residual-schema compatibility and portable runtime cleanup; benchmark scoring unchanged"
+    },
+    {
+      "path": "scripts/run_full_eval_local.py",
+      "sha256": "9ed42d55a0be8e26965e182f1d73e99f709bbaf47af56e8f25a75992452dcce9",
+      "imported_sha256": "7c8b5d189798e5bc1caadf6ebc98ff49b79439d36154b89ffdbeb6441465448d",
+      "local_change": "Operational portability/safety only; see PATCHES.md"
+    },
+    {
+      "path": "scripts/run_tp_full_eval_pipeline.py",
+      "sha256": "a22da056a252ac886141f00b88e50ec2f80011c5d7bc55d93b92910f54bfc79e",
+      "imported_sha256": "9bad4a58e214fb066d874e7540d57299347965b0e035b35ccd5068e397880979",
+      "local_change": "Operational portability/safety only; see PATCHES.md",
+      "original_sha256": "8eb9cce6908c471ae3b0367bea645a2528f81e41dd008c7d78b5b48b1d4cfe1c",
+      "release_patch": "Sanitize machine-specific paths and operational references; preserve evaluation algorithms"
+    },
+    {
+      "path": "scripts/task_planning_config.py",
+      "sha256": "41ce519bd44f90f1e81baa9c5f16c43eab282196df454002930132358ac8d710",
+      "original_sha256": "90c07fc2c524f9186f698d544c3c0e4bf728297996b854e440c789c960f736bc",
+      "release_patch": "Sanitize machine-specific paths and operational references; preserve evaluation algorithms"
+    },
+    {
+      "path": "scripts/task_planning_io.py",
+      "sha256": "818a7d33f77cb5145d2b21878c0bbec660b69c99e5f7790a12005a27aee5d53c"
+    },
+    {
+      "path": "EmbodiedBench/embodiedbench/envs/eb_alfred/LICENSE",
+      "sha256": "c5d9c78cf00a05feb1b71f589a2d542c510619efe3bef2dbfb156e88b952da36",
+      "upstream_url": "https://raw.githubusercontent.com/EmbodiedBench/EmbodiedBench/9be4e980e9cd6bcb38373cd4aab7c32724bdd401/embodiedbench/envs/eb_alfred/LICENSE",
+      "scope": "ALFRED subdirectory license; not repository-wide authorization"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+task: emspatial-bench
+# 使用 HuggingFace 数据集路径（框架会自动使用本地缓存如果已下载）
+# dataset_path: FlagEval/EmbSpatial-Bench
+# 如果希望强制使用本地路径，取消注释下面这行并注释掉上面的 dataset_path
+dataset_path: /path/to/evaluation/dataset
+dataset_kwargs: {}
+load_from_disk: true
+eval_split: null
+doc_to_visual: !function process.emspatial_doc_to_visual
+doc_to_text: !function process.emspatial_doc_to_text
+doc_to_target: !function process.emspatial_doc_to_target
+output_type: generate_until
+generation_kwargs:
+  max_new_tokens: 4096
+  temperature: 0
+  do_sample: false
+  top_p: 1.0
+  num_beams: 1
+# metrics
+process_results: !function process.emspatial_process_results
+metric_kwargs:
+  metric: accuracy
+  aggregation: !function process.emspatial_aggregate_results
+  higher_is_better: true

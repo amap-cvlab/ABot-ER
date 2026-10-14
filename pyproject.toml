@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "abot-er"
+version = "0.1.0.dev0"
+description = "ABot-ER reproduction tooling; release validation in progress"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["PyYAML>=6,<7"]
+
+[project.optional-dependencies]
+hub = ["huggingface_hub>=0.34,<2"]
+
+[project.scripts]
+abot-er = "abot_er.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

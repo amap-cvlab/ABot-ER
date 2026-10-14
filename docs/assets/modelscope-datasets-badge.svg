@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="144" height="20" viewBox="0 0 216 30" role="img" aria-label="ModelScope: Datasets">
+  <title>ModelScope: Datasets</title>
+  <defs><clipPath id="round"><rect width="216" height="30" rx="4"/></clipPath></defs>
+  <g clip-path="url(#round)"><path fill="#555" d="M0 0h118v30H0z"/><path fill="#8c168f" d="M118 0h98v30H118z"/></g>
+  <g fill="#fff" text-anchor="middle" font-family="Verdana,DejaVu Sans,sans-serif" font-size="16">
+    <text x="59" y="21">ModelScope</text><text x="167" y="21">Datasets</text>
+  </g>
+</svg>

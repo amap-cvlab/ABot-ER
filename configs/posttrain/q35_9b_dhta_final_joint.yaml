@@ -1,0 +1,61 @@
+name: q35-9b-dhta-final-joint-singlepass
+phase: posttrain
+release_id: joint_tp_2dqa_dhta_final_joint_v1_20260910
+source_ordered_sha256: 5b7d276eed62e059aacab0c9d26d63bee0c08ccf45ee028d5e00a27ec72f1d46
+global_batch: 128
+model:
+  decoder_layers: 32
+  model_types: [qwen3_5]
+training:
+  template: qwen3_5
+  enable_thinking: false
+  stage: sft
+  do_train: true
+  streaming: true
+  mix_strategy: concat
+  buffer_size: 4096
+  cutoff_len: 8192
+  preprocessing_num_workers: 8
+  overwrite_cache: false
+  image_folder: /
+  video_folder: /
+  apply_data_fixes: true
+  data_fixes: split_static_video_to_image,cap_images,align_image_tags,prepend_dhta_task_token
+  max_images_per_sample: 32
+  image_resolution: 524288
+  video_resolution: 262144
+  video_fps: 1.0
+  video_maxlen: 16
+  enable_dhta: true
+  dhta_qa_token: '[2D_QA]'
+  dhta_task_plan_token: '[TASK_PLAN]'
+  dhta_layers: '19,23,27,31'
+  dhta_rank: 16
+  dhta_alpha: 16.0
+  dhta_require_route_token: true
+  finetuning_type: full
+  use_sample_weighted_loss: false
+  freeze_module_prefix: model.visual.blocks,model.visual.patch_embed,model.visual.pos_embed
+  per_device_train_batch_size: 1
+  gradient_checkpointing: true
+  learning_rate: 3.0e-7
+  lr_scheduler_type: cosine
+  warmup_steps: 50
+  max_steps: 800
+  num_train_epochs: 1.0
+  bf16: true
+  flash_attn: disabled
+  dataloader_num_workers: 1
+  dataloader_prefetch_factor: 4
+  dataloader_persistent_workers: true
+  dataloader_pin_memory: true
+  weight_decay: 0.01
+  seed: 20260910
+  ddp_timeout: 3600
+  save_strategy: steps
+  save_steps: 100
+  save_only_model: true
+  load_best_model_at_end: false
+  logging_steps: 10
+  logging_first_step: true
+  plot_loss: false

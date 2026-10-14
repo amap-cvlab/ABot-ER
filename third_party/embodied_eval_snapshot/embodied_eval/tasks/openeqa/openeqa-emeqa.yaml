@@ -1,0 +1,22 @@
+task: openeqa-emeqa
+dataset_path: /path/to/evaluation/dataset
+dataset_kwargs:
+  video_dir: /path/to/evaluation/media
+load_from_disk: true
+eval_split: test
+doc_to_visual: !function process.openeqa_emeqa_doc_to_visual
+doc_to_text: !function process.openeqa_emeqa_doc_to_text
+doc_to_target: "answer"
+output_type: generate_until
+generation_kwargs:
+  max_new_tokens: 4096
+  temperature: 0
+  do_sample: false
+  top_p: 1.0
+  num_beams: 1
+# metrics
+process_results: !function process.openeqa_emeqa_process_results
+metric_kwargs:
+  metric: llm_match_score
+  aggregation: !function process.openeqa_emeqa_aggregate_results
+  higher_is_better: true

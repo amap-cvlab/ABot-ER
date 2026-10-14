@@ -1,0 +1,105 @@
+# Copyright 2024 the LlamaFactory team.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+from typing import TYPE_CHECKING
+
+from transformers.utils import is_flash_attn_2_available
+
+from ...extras.packages import is_torch_version_greater_than, is_transformers_version_greater_than
+from ...extras.logging import get_logger
+
+
+if is_transformers_version_greater_than("5.0.0"):
+    # sdpa works correctly on all torch versions >= 2.2
+    def is_torch_sdpa_available():
+        return is_torch_version_greater_than("2.2")
+else:
+    from transformers.utils import is_torch_sdpa_available
+
+
+if TYPE_CHECKING:
+    from transformers import PretrainedConfig
+
+    from ...hparams import ModelArguments
+
+
+logger = get_logger(__name__)
+
+
+def configure_attn_implementation(
+    config: "PretrainedConfig", model_args: "ModelArguments", is_trainable: bool
+) -> None:
+    if getattr(config, "model_type", None) == "qwen":
+        model_args.flash_attn = "auto"
+
+    if getattr(config, "model_type", None) == "gemma2" and is_trainable:  # gemma2 adopts soft-cap attention
+        if model_args.flash_attn == "auto":
+            logger.warning("Gemma-2 models should use eager attention in training, change `flash_attn` to disabled.")
+            model_args.flash_attn = "disabled"
+        elif model_args.flash_attn != "disabled":
+            logger.warning(
+                "Gemma-2 models should use eager attention in training, but you set `flash_attn: {}`. "
+                "Will proceed at your own risk.".format(model_args.flash_attn)
+            )
+
+    if model_args.flash_attn == "auto":
+        return
+
+    elif model_args.flash_attn == "disabled":
+        requested_attn_implementation = "eager"
+
+    elif model_args.flash_attn == "sdpa":
+        if not is_torch_sdpa_available():
+            logger.warning("torch>=2.2 is required for SDPA attention.")
+            return
+
+        requested_attn_implementation = "sdpa"
+    elif model_args.flash_attn == "fa2":
+        if not is_flash_attn_2_available():
+            logger.warning("FlashAttention-2 is not installed.")
+            return
+
+        requested_attn_implementation = "flash_attention_2"
+    else:
+        raise NotImplementedError("Unknown attention type: {}".format(model_args.flash_attn))
+
+    if getattr(config, "model_type", None) == "internlm2":  # special case for custom models
+        setattr(config, "attn_implementation", requested_attn_implementation)
+    elif getattr(config, "model_type", None) == "internvl_chat":
+        config.vision_config.use_flash_attn = (requested_attn_implementation != "eager")
+        if config.llm_config.architectures[0] in ['InternLM2ForCausalLM', 'InternLM2VEForCausalLM']:
+            config.llm_config.attn_implementation = requested_attn_implementation
+        else:
+            config.llm_config._attn_implementation = requested_attn_implementation
+    else:
+        setattr(config, "_attn_implementation", requested_attn_implementation)
+
+
+def print_attn_implementation(config: "PretrainedConfig") -> None:
+    if getattr(config, "model_type", None) == "internlm2":  # special case for custom models
+        attn_implementation = getattr(config, "attn_implementation", None)
+    elif getattr(config, "model_type", None) == "internvl_chat":
+        if config.llm_config.architectures[0] == 'InternLM2ForCausalLM':
+            attn_implementation = getattr(config.llm_config, "attn_implementation", None)
+        else:
+            attn_implementation = getattr(config.llm_config, "_attn_implementation", None)
+    else:
+        attn_implementation = getattr(config, "_attn_implementation", None)
+
+    if attn_implementation == "flash_attention_2":
+        logger.info("Using FlashAttention-2 for faster training and inference.")
+    elif attn_implementation == "sdpa":
+        logger.info("Using torch SDPA for faster training and inference.")
+    else:
+        logger.info("Using vanilla attention implementation.")

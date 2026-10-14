@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="137.33" height="20" viewBox="0 0 206 30" role="img" aria-label="ModelScope Models">
+  <title>ModelScope Models</title>
+  <defs>
+    <linearGradient id="shine" x2="0" y2="100%"><stop stop-color="#fff" stop-opacity=".18"/><stop offset="1" stop-opacity=".10"/></linearGradient>
+    <clipPath id="round"><rect width="206" height="30" rx="4"/></clipPath>
+  </defs>
+  <g clip-path="url(#round)">
+    <path fill="#555" d="M0 0h118v30H0z"/>
+    <path fill="#2472c8" d="M118 0h88v30H118z"/>
+    <path fill="url(#shine)" d="M0 0h206v30H0z"/>
+  </g>
+  <g fill="#fff" text-anchor="middle" font-family="Verdana,DejaVu Sans,sans-serif" font-size="16">
+    <text x="59" y="21">ModelScope</text>
+    <text x="162" y="21">Models</text>
+  </g>
+</svg>

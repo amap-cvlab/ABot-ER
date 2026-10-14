@@ -1,0 +1,27 @@
+task: where2place-point_aboter
+dataset_path: /path/to/evaluation/dataset
+dataset_kwargs:
+  # 为对齐同事 offline 评测，Where2Place 使用旧版 tuple 输出风格，坐标为 0-1 normalized；
+  # 当前 scorer 不改代码，通过 backbone=gpt 复用已有的 0-1 坐标解析逻辑。
+  backbone: gpt
+  # 不使用当前默认的 Qwen3 {"point_2d": [x, y]} prompt，而是对齐 offline 的 tuple prompt。
+  use_kit_prompt: false
+  pre_prompt: You are an agent who reasons about free space and spatial relations.
+  post_prompt: Your answer should be formatted as a list of tuples, i.e. [(x1, y1), (x2, y2), ...], where each tuple contains the x and y coordinates of a point satisfying the conditions above.
+load_from_disk: true
+eval_split: test
+doc_to_visual: !function process.where2place_doc_to_visual
+doc_to_text: !function process.where2place_doc_to_text
+doc_to_target: "id"
+output_type: generate_until
+generation_kwargs:
+  max_new_tokens: 4096
+  temperature: 0
+  do_sample: false
+  top_p: 1.0
+  num_beams: 1
+process_results: !function process.where2place_process_results
+metric_kwargs:
+  metric: reference_acc
+  aggregation: !function process.where2place_aggregate_results
+  higher_is_better: true

@@ -1,0 +1,134 @@
+{
+  "format_contract_version": "leaderboard-runtime-20260810-format-v2.1",
+  "eqa_repo_commit": "unavailable_shared_repo_permissions",
+  "task_plan_repo_commit": "c48b49b39531d91b7d0c95f7ac632180cbcdb2fc",
+  "sources": {
+    "vabench_yaml": {
+      "path": "embodied-arena/embodied_eval/tasks/vabench/vabench_aboter.yaml",
+      "sha256": "15d88d0e53499d70077fe929a6d8e84fcceeff5ec4d18721025c5682ac568086"
+    },
+    "vabench_parser": {
+      "path": "embodied-arena/embodied_eval/tasks/vabench/process.py",
+      "sha256": "245ed95a8a37c7be431c29ade3e17c239f681edb8d76c5af3eb9e4120071e3a7"
+    },
+    "w2p_yaml": {
+      "path": "embodied-arena/embodied_eval/tasks/where2place/where2place-point_aboter.yaml",
+      "sha256": "e08832824e0caae6998ad0203ecea2daa5f7b3f379cd4d0afe451956fc7d900c"
+    },
+    "w2p_parser": {
+      "path": "embodied-arena/embodied_eval/tasks/where2place/process.py",
+      "sha256": "89aff995f7702fb901f897e6bfff999cdc964bbb0f8c6ebe394f46beb4b19780"
+    },
+    "vsi_yaml": {
+      "path": "embodied-arena/embodied_eval/tasks/vsibench/vsibench.yaml",
+      "sha256": "f2f4cd374aa78d8d7274ec84dcd168ca66733497ddd45928c06ca61f08ae2e65"
+    },
+    "vsi_parser": {
+      "path": "embodied-arena/embodied_eval/tasks/vsibench/process.py",
+      "sha256": "6d9b83c47f9898f69e366e711c0b0e50bc5c0f7937c72f434fbbaa72f7838f6b"
+    },
+    "cosmos_parser": {
+      "path": "embodied-arena/embodied_eval/tasks/cosmos/process.py",
+      "sha256": "cc38e0509c72e98489bcab1d2bf92d94cb9203377db02fefbd8b93728a144836"
+    },
+    "emspatial_parser": {
+      "path": "embodied-arena/embodied_eval/tasks/emspatial_bench/process.py",
+      "sha256": "21562c5e347106f1abb15b90ea934eea2ede86d793690f99364f2f5b88ae41a4"
+    },
+    "erqa_parser": {
+      "path": "embodied-arena/embodied_eval/tasks/erqa/process.py",
+      "sha256": "c1396c5120ae02780bed29ae3c12effbbac2faff7964dae416e537b347204dcf"
+    },
+    "openeqa_parser": {
+      "path": "embodied-arena/embodied_eval/tasks/openeqa/process.py",
+      "sha256": "1a501e00b74b2f1c53728e551540803e3d710167b25e082606dfb879d6b579d2"
+    },
+    "robovqa_parser": {
+      "path": "embodied-arena/embodied_eval/tasks/robovqa/process.py",
+      "sha256": "5dc05ddbaa04177c0ea8ae2e9669e94574ad6cbf425410fc62a295d345edf455"
+    },
+    "unieqa_parser": {
+      "path": "embodied-arena/embodied_eval/tasks/unieqa/process.py",
+      "sha256": "17ac82ff2e33a8807e00f8cdd5320fb9999c7bcdb63a097e839a44d1130bbe58"
+    },
+    "qwen35_adapter": {
+      "path": "embodied-arena/embodied_eval/models/qwen3_5.py",
+      "sha256": "6f40a38c26584e669b88b1c72af0e38fffd22d5bad70fb719d81be51b3ba45bf"
+    },
+    "vabench_runtime_config": {
+      "path": "embodied-arena/outputs/eqa_joint_tp_2dqa_q35_9b_unified_posttrain/eval-1200/vabench/configs_vabench_aboter.json",
+      "sha256": "879649c339f715be4e647ab7aef6ba28dae955bcf740664d791e3c5c91c90e5d"
+    },
+    "w2p_runtime_config": {
+      "path": "embodied-arena/outputs/eqa_joint_tp_2dqa_q35_9b_unified_posttrain/eval-1200/where2place-point/configs_where2place-point_aboter.json",
+      "sha256": "448e434fd1ceee503bee5d698c91d9804d2e86e4ccebd3f04d09ba2648886e01"
+    },
+    "alfred_config": {
+      "path": "EvalTaskPlanning/EmbodiedBench/embodiedbench/configs/eb-alf.yaml",
+      "sha256": "d44b3bde2196aac1c342f4a6afa41c2ce2621c0fc9d1e56276d18256a51347c6"
+    },
+    "habitat_config": {
+      "path": "EvalTaskPlanning/EmbodiedBench/embodiedbench/configs/eb-hab.yaml",
+      "sha256": "fc66ba766a97bccb27b1fc6405da58bc1adc3d8ff885c470462ade073c589274"
+    }
+  },
+  "contracts": {
+    "vabench": {
+      "prompt": "You are currently a robot performing robotic manipulation tasks. The task instruction is: {instruction}. Use 2D points to mark the target location where the object you need to manipulate in the task should ultimately be moved. Your answer should be wrapped in <Answer><point>[[x1,y1],[x2,y2],[x3,y3],[x4,y4],[x5,y5],[x6,y6],[x7,y7],[x8,y8]]</point></Answer>, where each coordinate is a decimal between 0 and 1, normalized to the image width and height.",
+      "answer_schema": "point01_xml8",
+      "point_count": 8,
+      "coord_mode": "normalized_0_1",
+      "parser_source": "vabench_parser",
+      "runtime_config_source": "vabench_runtime_config"
+    },
+    "where2place": {
+      "prompt": "You are an agent who reasons about free space and spatial relations. {question} Your answer should be formatted as a list of tuples, i.e. [(x1, y1), (x2, y2), ...], where each tuple contains the x and y coordinates of a point satisfying the conditions above.",
+      "answer_schema": "point01_tuple_list",
+      "point_count": "variable_1_2_3_in_training_no_count_instruction",
+      "coord_mode": "normalized_0_1",
+      "parser_source": "w2p_parser",
+      "runtime_config_source": "w2p_runtime_config"
+    },
+    "vsi_numeric": {
+      "prompt": "These are frames of a video.\n{question}\nPlease answer the question using a single word or phrase.",
+      "answer_schema": "numeric_or_short_phrase"
+    },
+    "vsi_mcq": {
+      "prompt": "These are frames of a video.\n{question}\nOptions:\n{options}\nAnswer with the option's letter from the given choices directly.",
+      "answer_schema": "single_A_D"
+    },
+    "cosmos": {
+      "prompt": "{question}\n{paren_options}\nAnswer with the option's letter from the given choices directly.",
+      "answer_schema": "single_A_D"
+    },
+    "emspatial": {
+      "prompt": "{question}\n\nOptions:\n{letter_dot_options}\n\nPlease select the correct answer (A, B, C, or D).\n",
+      "answer_schema": "single_A_D"
+    },
+    "erqa": {
+      "prompt": "{question_with_choices} Please answer directly with only the letter of the correct option and nothing else.",
+      "answer_schema": "single_A_D"
+    },
+    "openeqa": {
+      "prompt": "{question}",
+      "answer_schema": "concise_open_text"
+    },
+    "robovqa": {
+      "prompt": "{question}",
+      "answer_schema": "concise_open_text"
+    },
+    "unieqa": {
+      "prompt": "{question}",
+      "answer_schema": "native_open_or_mcq"
+    },
+    "task_plan": {
+      "prompt": "benchmark_runtime_renderer",
+      "answer_schema": "benchmark_specific_exact"
+    }
+  },
+  "qwen_chat_template": "qwen3_5",
+  "enable_thinking": false,
+  "thinking_behavior": "empty thinking block belongs to the prompt; raw assistant labels contain no CoT",
+  "combined_sha256": "d5da7159fb32959c7c5ff247542b6fc76a89c0526b40c98a933b37768783fd74",
+  "status": "historical_snapshot_not_current_evaluator_certification"
+}

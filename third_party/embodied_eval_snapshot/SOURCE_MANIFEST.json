@@ -1,0 +1,214 @@
+{
+  "snapshot_date": "2026-09-26",
+  "source_repository": "ABot-ER EQA integration",
+  "source_git_commit": null,
+  "source_git_commit_status": "not recorded; file identities are recorded individually",
+  "scope": "EQA source, task processors and evaluation core; portable orchestration in src/abot_er/evaluation.py",
+  "public_distribution_status": "license_files_pending_review",
+  "files": [
+    {
+      "path": "embodied_eval/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "embodied_eval/utils.py",
+      "sha256": "0d61d80d8d27f17713c3caca9bc5050eab452f076443ef82ce84e16a90e2a725"
+    },
+    {
+      "path": "embodied_eval/models/__init__.py",
+      "sha256": "e3a99d11bb164617204a65c2398c9d058018f01248b3371a5c00eba22fd586a7"
+    },
+    {
+      "path": "embodied_eval/models/dhta.py",
+      "sha256": "b7b1ef6ef8dbf1bef39864c465423159b266f1d96ddafa5fbfd7e9c197376d2b",
+      "original_sha256": "00039e6d8e2d70b84533799cff7e2c7f6b7bc83ab6123ba901f730b2ce34e431",
+      "modification": "Published residual-schema compatibility and portable runtime cleanup; benchmark scoring unchanged"
+    },
+    {
+      "path": "embodied_eval/models/aboter.py",
+      "sha256": "cefcd69a4657a937c24aa27d726731059c16193e97217db23888eea10af53c01"
+    },
+    {
+      "path": "embodied_eval/models/qwen3_5.py",
+      "sha256": "9bb724043a40338557366587dec3e06480eecbd194c2f8d964992fd6361a80c6",
+      "original_sha256": "10a3dceab13299c428d10f09e3e92f15412754144e42d384bd21c4510845a28c",
+      "modification": "Published residual-schema compatibility; reject unconditioned evaluated models; benchmark scoring unchanged"
+    },
+    {
+      "path": "embodied_eval/models/qwen_dhta_eval_profile.py",
+      "sha256": "eb3e12637b1cbed0727e91432c508312a4b32491b50aab937b9465ee3fba29fb",
+      "original_sha256": "d00223474c0982ec79bf405f140e7d0e2bb5f9d06723d5ea08146c387ba88076",
+      "modification": "Published residual-schema compatibility and portable runtime cleanup; benchmark scoring unchanged"
+    },
+    {
+      "path": "embodied_eval/models/qwen35_legacy_chat_template.jinja",
+      "sha256": "e84f32a23fdda27689f868aa4a1a5621f41133e51a48d7f3efcbea2839574259"
+    },
+    {
+      "path": "embodied_eval/pointing/__init__.py",
+      "sha256": "c51963bfafeee94670d298e4b658b63f178cb0cdb0f6050018eca0d56a9a90db"
+    },
+    {
+      "path": "embodied_eval/pointing/coords.py",
+      "sha256": "beaf0d15e5e4eb6bd5a28ceca4fa67c1bf66768242be302ff9bd9414a7e08833"
+    },
+    {
+      "path": "embodied_eval/pointing/point_utils.py",
+      "sha256": "2e34fe06d3b8159316992d8ba8eac596c64dc77304c4fffef2468f2ad1a9b53e"
+    },
+    {
+      "path": "tests/test_dhta_model.py",
+      "sha256": "874935401d23c72f1c771a86eb0a07ca01a21763f6a34d5017556f6edd8e788e"
+    },
+    {
+      "path": "tests/test_qwen_dhta_eval_profile.py",
+      "sha256": "aa579a82bfebd72e06287137a816484b0f8ea3270ff1fa8c83b08c20836fce08"
+    },
+    {
+      "path": "embodied_eval/tasks/vabench/process.py",
+      "sha256": "245ed95a8a37c7be431c29ade3e17c239f681edb8d76c5af3eb9e4120071e3a7"
+    },
+    {
+      "path": "embodied_eval/tasks/where2place/process.py",
+      "sha256": "89aff995f7702fb901f897e6bfff999cdc964bbb0f8c6ebe394f46beb4b19780"
+    },
+    {
+      "path": "embodied_eval/tasks/cosmos/process.py",
+      "sha256": "cc38e0509c72e98489bcab1d2bf92d94cb9203377db02fefbd8b93728a144836"
+    },
+    {
+      "path": "embodied_eval/tasks/erqa/process.py",
+      "sha256": "c1396c5120ae02780bed29ae3c12effbbac2faff7964dae416e537b347204dcf"
+    },
+    {
+      "path": "embodied_eval/tasks/emspatial_bench/process.py",
+      "sha256": "21562c5e347106f1abb15b90ea934eea2ede86d793690f99364f2f5b88ae41a4"
+    },
+    {
+      "path": "embodied_eval/tasks/openeqa/process.py",
+      "sha256": "1a501e00b74b2f1c53728e551540803e3d710167b25e082606dfb879d6b579d2"
+    },
+    {
+      "path": "embodied_eval/tasks/robovqa/process.py",
+      "sha256": "5dc05ddbaa04177c0ea8ae2e9669e94574ad6cbf425410fc62a295d345edf455"
+    },
+    {
+      "path": "embodied_eval/tasks/unieqa/process.py",
+      "sha256": "17ac82ff2e33a8807e00f8cdd5320fb9999c7bcdb63a097e839a44d1130bbe58"
+    },
+    {
+      "path": "embodied_eval/tasks/vsibench/process.py",
+      "sha256": "6d9b83c47f9898f69e366e711c0b0e50bc5c0f7937c72f434fbbaa72f7838f6b"
+    },
+    {
+      "path": "embodied_eval/tasks/vabench/vabench_aboter.yaml",
+      "sha256": "f189677510e272be2d80e3744cf4aa7de023025e57b4bd2052f0fb6a3e5bf032",
+      "original_sha256": "15d88d0e53499d70077fe929a6d8e84fcceeff5ec4d18721025c5682ac568086",
+      "release_patch": "Sanitize machine-specific paths and operational references; preserve evaluation algorithms"
+    },
+    {
+      "path": "embodied_eval/tasks/where2place/where2place-point_aboter.yaml",
+      "sha256": "59dcca0eede3714889eac63cad634e10880f50ab7395cf7e6943c213dfd348ea",
+      "original_sha256": "e08832824e0caae6998ad0203ecea2daa5f7b3f379cd4d0afe451956fc7d900c",
+      "release_patch": "Sanitize machine-specific paths and operational references; preserve evaluation algorithms"
+    },
+    {
+      "path": "embodied_eval/tasks/cosmos/cosmos-agibot.yaml",
+      "sha256": "45bb30ef59c51bc499c1f999410486c15709eb87e79de396f62b4e742f2d1018",
+      "original_sha256": "e3de52b79e824135eb0b754ad78f34e2d1dd3331a60fb8397e640ac8a3bf8b95",
+      "release_patch": "Sanitize machine-specific paths and operational references; preserve evaluation algorithms"
+    },
+    {
+      "path": "embodied_eval/tasks/cosmos/cosmos-bridgev2.yaml",
+      "sha256": "356220e198e1d68b3dd4ea3a9e9c26eb8339074d62b33d01419c39aa75a6be2f",
+      "original_sha256": "7e7cb8263b336a4ac36ca5c6e1e0c49dd60751f13d6d2db36da8afd7180f18f0",
+      "release_patch": "Sanitize machine-specific paths and operational references; preserve evaluation algorithms"
+    },
+    {
+      "path": "embodied_eval/tasks/cosmos/cosmos-holoassist.yaml",
+      "sha256": "a2c01e12f1682ceca745ac1861c9bd29f3b3d95c95e994a6c8510d9b5cc05467",
+      "original_sha256": "ddea56a896a35e83c5220362f48f1f3a36acbf9c6cd9a77f5f6ffc06ff4fb86c",
+      "release_patch": "Sanitize machine-specific paths and operational references; preserve evaluation algorithms"
+    },
+    {
+      "path": "embodied_eval/tasks/cosmos/cosmos-robofail.yaml",
+      "sha256": "126b0923bbcfafe437581f955e705db5134189c8e7888a36fc8a98ade4edb61e",
+      "original_sha256": "1c22d0702b9eb7f4f973f4a059b7143ffea75d750e69f23c23ecaddc70a30b0f",
+      "release_patch": "Sanitize machine-specific paths and operational references; preserve evaluation algorithms"
+    },
+    {
+      "path": "embodied_eval/tasks/cosmos/cosmos-robovqa.yaml",
+      "sha256": "0cb5e646cba2d3b214f52ed8404b3f0266ef4bf658b07301d75952d521b3697b",
+      "original_sha256": "59bd0cf1d2b667c89c4de8ac3de18695f4d6e46f9d87dac565343dcbe91c3c12",
+      "release_patch": "Sanitize machine-specific paths and operational references; preserve evaluation algorithms"
+    },
+    {
+      "path": "embodied_eval/tasks/erqa/erqa.yaml",
+      "sha256": "7a7c7c677f9c72c6814cdcecbcbcae283c711176761428dd85f251d56344a425",
+      "original_sha256": "c9dd2b00e3aaa83955c537238ee10e89372aae572d16994a6fdd077ab80540cd",
+      "release_patch": "Sanitize machine-specific paths and operational references; preserve evaluation algorithms"
+    },
+    {
+      "path": "embodied_eval/tasks/emspatial_bench/emspatial-bench.yaml",
+      "sha256": "1548b457dccdd1ffc32b792cac4579a723ca5e48acb35b5b975ad0dba194f740",
+      "original_sha256": "e042e671affb5fb754dd0e46ceee9d5e85fd0843a0b4ed62ce9d72efa5cb5b08",
+      "release_patch": "Sanitize machine-specific paths and operational references; preserve evaluation algorithms"
+    },
+    {
+      "path": "embodied_eval/tasks/openeqa/openeqa-emeqa.yaml",
+      "sha256": "97699bacf0519bfa92cfcad3e54d47fcdfe52df1051fbe6a3ab108707fdab5f9",
+      "original_sha256": "fd408950315afd5e8ee7de48b65f2add11332acb400e4c18e40ca1a1557df646",
+      "release_patch": "Sanitize machine-specific paths and operational references; preserve evaluation algorithms"
+    },
+    {
+      "path": "embodied_eval/tasks/robovqa/robovqa.yaml",
+      "sha256": "dd183f7c8d3d54259a1c6a4ad4bbd7d7b3b1c017f639c2b77ca5cd4e8c4c7348",
+      "original_sha256": "a2939582f6426d7fb81282d30a48fad318566e10d87edf109a3ce42dfba02042",
+      "release_patch": "Sanitize machine-specific paths and operational references; preserve evaluation algorithms"
+    },
+    {
+      "path": "embodied_eval/tasks/unieqa/unieqa.yaml",
+      "sha256": "bb8431d562808ec09760a702c37aa98258aa7c263276870d93bc2cf016b9fd9d",
+      "original_sha256": "7b53f9121bf2856b2cf0ec0fc4548ab2512ad03f93819c504dc29d58a5ff1cc4",
+      "release_patch": "Sanitize machine-specific paths and operational references; preserve evaluation algorithms"
+    },
+    {
+      "path": "embodied_eval/tasks/vsibench/vsibench.yaml",
+      "sha256": "ddaa2eee403ebc325825271d4974b9e107b1bcfb93371ebe5ef882fab5f3507a",
+      "original_sha256": "f2f4cd374aa78d8d7274ec84dcd168ca66733497ddd45928c06ca61f08ae2e65",
+      "release_patch": "Sanitize machine-specific paths and operational references; preserve evaluation algorithms"
+    },
+    {
+      "path": "embodied_eval/common/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "embodied_eval/common/instance.py",
+      "sha256": "8b7368bf31ab7a55c7bc1e6ae29966f3726239f4638dd40b2b1f9bcb8fb07e06"
+    },
+    {
+      "path": "embodied_eval/common/metric.py",
+      "sha256": "8d3ef45edbc05cedec32271f420b0997d0059367ec3547d163b31b9c1e0b22cd"
+    },
+    {
+      "path": "embodied_eval/common/registry.py",
+      "sha256": "9e309a5a1591dd1ebd02fa15eacea615c239f7d1359c8f382197b4577b677174"
+    },
+    {
+      "path": "embodied_eval/tasks/__init__.py",
+      "sha256": "5b21d814577c517ed006f4edbb20f335edd21ce0ef75347cde0d049d355c469e"
+    },
+    {
+      "path": "embodied_eval/evaluators/eqa_evaluator.py",
+      "sha256": "42183016519d753f8b22a9c09a1b1cef4215e3ed345a5964581050adca3cc181"
+    },
+    {
+      "path": "embodied_eval/evaluators/fast_artifacts.py",
+      "sha256": "f459885c5edb0a309be332df2a21428ad632bc097fe618efefda77a421d0eb6e"
+    },
+    {
+      "path": "embodied_eval/evaluators/local_llm_judge.py",
+      "sha256": "ec6d584e80b294388b37029e5a33a1cc7044394ef5875ce39b6ea1d66649681b"
+    }
+  ]
+}

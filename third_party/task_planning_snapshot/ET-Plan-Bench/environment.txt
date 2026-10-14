@@ -1,0 +1,193 @@
+# Historical upstream environment export; not the supported ABot-ER GPU lock.
+#
+# Name                    Version                   Build  Channel
+_libgcc_mutex             0.1                  main.conda
+_openmp_mutex             5.1                 1_gnu.conda
+absl-py                   2.1.0                     <pip>
+aiohttp                   3.9.3                     <pip>
+aiosignal                 1.3.1                     <pip>
+annotated-types           0.6.0                     <pip>
+anyio                     4.3.0                     <pip>
+anytree                   2.12.1                    <pip>
+asttokens                 2.0.5              pyhd3eb1b0_0    anaconda
+asttokens                 2.4.1                     <pip>
+async-timeout             4.0.3                     <pip>
+attrs                     23.2.0                    <pip>
+autoflake                 2.3.1                     <pip>
+backcall                  0.2.0              pyhd3eb1b0_0    anaconda
+backoff                   2.2.1                     <pip>
+ca-certificates           2024.2.2        hbcca054_0.conda
+certifi                   2019.3.9                  <pip>
+cffi                      1.16.0                    <pip>
+chardet                   3.0.4                     <pip>
+charset-normalizer        2.0.12                    <pip>
+click                     8.1.7                     <pip>
+clingo                    5.7.1                     <pip>
+cloudpickle               3.0.0                     <pip>
+comm                      0.1.2            py39h06a4308_0    anaconda
+contourpy                 1.2.0                     <pip>
+cycler                    0.12.1                    <pip>
+debugpy                   1.6.7            py39h6a678d5_0    anaconda
+decorator                 5.1.1              pyhd3eb1b0_0    anaconda
+distro                    1.9.0                     <pip>
+et-xmlfile                1.1.0                     <pip>
+exceptiongroup            1.2.0                     <pip>
+exceptiongroup            1.0.4            py39h06a4308_0    anaconda
+executing                 2.0.1                     <pip>
+executing                 0.8.3              pyhd3eb1b0_0    anaconda
+fastjsonschema            2.19.1                    <pip>
+ffmpeg-python             0.2.0                     <pip>
+filelock                  3.9.0                     <pip>
+fonttools                 4.47.2                    <pip>
+frozenlist                1.4.1                     <pip>
+fsspec                    2023.12.2                 <pip>
+future                    0.18.3                    <pip>
+grpcio                    1.62.0                    <pip>
+grpcio                    1.64.0                    <pip>
+gym                       0.26.2                    <pip>
+gym-notices               0.0.8                     <pip>
+h11                       0.14.0                    <pip>
+httpcore                  1.0.4                     <pip>
+httplib2                  0.22.0                    <pip>
+httpx                     0.27.0                    <pip>
+huggingface-hub           0.20.3                    <pip>
+idna                      2.8                       <pip>
+ijson                     3.2.3                     <pip>
+importlib-metadata        6.0.0            py39h06a4308_0    anaconda
+importlib-resources       6.1.1                     <pip>
+importlib_metadata        6.0.0                hd3eb1b0_0    anaconda
+ipdb                      0.13.9                    <pip>
+ipykernel                 6.25.0           py39h2f386ee_0    anaconda
+ipython                   8.15.0           py39h06a4308_0    anaconda
+ipython                   8.18.1                    <pip>
+jedi                      0.18.1           py39h06a4308_1    anaconda
+jedi                      0.19.1                    <pip>
+Jinja2                    3.1.2                     <pip>
+joblib                    1.3.2                     <pip>
+jsonlines                 4.0.0                     <pip>
+jsonschema                4.21.1                    <pip>
+jsonschema-specifications 2023.12.1                 <pip>
+jupyter_client            8.6.0            py39h06a4308_0    anaconda
+jupyter_core              5.7.1                     <pip>
+jupyter_core              5.5.0            py39h06a4308_0    anaconda
+kiwisolver                1.4.5                     <pip>
+ld_impl_linux-64          2.38            h1181459_1.conda
+libffi                    3.3             he6710b0_2.conda
+libgcc-ng                 11.2.0          h1234567_1.conda
+libgomp                   11.2.0          h1234567_1.conda
+libsodium                 1.0.18               h7b6447c_0    anaconda
+libstdcxx-ng              11.2.0          h1234567_1.conda
+lightning-utilities       0.10.1                    <pip>
+Markdown                  3.5.2                     <pip>
+MarkupSafe                2.1.3                     <pip>
+matplotlib                3.8.2                     <pip>
+matplotlib-inline         0.1.6            py39h06a4308_0    anaconda
+mpmath                    1.3.0                     <pip>
+msgpack                   1.0.7                     <pip>
+msgspec                   0.18.6                    <pip>
+multidict                 6.0.5                     <pip>
+nbformat                  5.9.2                     <pip>
+ncurses                   6.4             h6a678d5_0.conda
+nest-asyncio              1.5.6            py39h06a4308_0    anaconda
+networkx                  2.5                        py_0    conda-forge
+networkx                  3.2.1                     <pip>
+nltk                      3.8.1                     <pip>
+numpy                     1.26.3                    <pip>
+openai                    1.12.0                    <pip>
+opencv-python             4.5.1.48                  <pip>
+openpyxl                  3.1.2                     <pip>
+openssl                   1.1.1l               h7f98852_0    conda-forge
+packaging                 23.2                      <pip>
+packaging                 23.1             py39h06a4308_0    anaconda
+pandas                    2.2.0                     <pip>
+parso                     0.8.3              pyhd3eb1b0_0    anaconda
+pexpect                   4.9.0                     <pip>
+pexpect                   4.8.0              pyhd3eb1b0_3    anaconda
+pickleshare               0.7.5           pyhd3eb1b0_1003    anaconda
+pillow                    10.2.0                    <pip>
+pip                       24.0                      <pip>
+platformdirs              4.1.0                     <pip>
+platformdirs              3.10.0           py39h06a4308_0    anaconda
+plotly                    3.10.0                    <pip>
+profilehooks              1.12.0                    <pip>
+prompt-toolkit            3.0.43                    <pip>
+prompt-toolkit            3.0.36           py39h06a4308_0    anaconda
+proto-plus                1.23.0                    <pip>
+protobuf                  4.25.3                    <pip>
+psutil                    5.9.0            py39h5eee18b_0    anaconda
+ptyprocess                0.7.0              pyhd3eb1b0_2    anaconda
+pure_eval                 0.2.2              pyhd3eb1b0_0    anaconda
+pyarrow                   15.0.0                    <pip>
+pyasn1                    0.6.0                     <pip>
+pycparser                 2.22                      <pip>
+pydantic                  2.6.3                     <pip>
+pydantic_core             2.16.3                    <pip>
+pyDeprecate               0.3.1                     <pip>
+pyflakes                  3.2.0                     <pip>
+Pygments                  2.17.2                    <pip>
+pygments                  2.15.1           py39h06a4308_1    anaconda
+pyparsing                 3.1.1                     <pip>
+python                    3.9.0           hdb3f193_2.conda
+python-dateutil           2.8.2              pyhd3eb1b0_0    anaconda
+pytorch-lightning         1.5.2                     <pip>
+pytz                      2023.3.post1              <pip>
+PyYAML                    6.0.1                     <pip>
+pyzmq                     25.1.0           py39h6a678d5_0    anaconda
+ray                       2.9.3                     <pip>
+readline                  8.2             h5eee18b_0.conda
+referencing               0.32.1                    <pip>
+regex                     2023.12.25                <pip>
+replicate                 0.26.0                    <pip>
+requests                  2.27.1                    <pip>
+retrying                  1.3.4                     <pip>
+rpds-py                   0.17.1                    <pip>
+safetensors               0.4.2                     <pip>
+scikit-learn              1.4.0                     <pip>
+scipy                     1.12.0                    <pip>
+sentence-transformers     2.2.2                     <pip>
+sentencepiece             0.1.99                    <pip>
+setuptools                68.2.2          py39h06a4308_0.conda
+six                       1.16.0             pyhd3eb1b0_1    anaconda
+sniffio                   1.3.1                     <pip>
+sqlite                    3.41.2          h5eee18b_0.conda
+stack-data                0.6.3                     <pip>
+stack_data                0.2.0              pyhd3eb1b0_0    anaconda
+sympy                     1.12                      <pip>
+tensorboard               2.16.2                    <pip>
+tensorboard-data-server   0.7.2                     <pip>
+termcolor                 1.1.0                     <pip>
+threadpoolctl             3.2.0                     <pip>
+timm                      0.9.12                    <pip>
+tk                        8.6.12          h1ccaba5_0.conda
+tokenizers                0.15.1                    <pip>
+toml                      0.10.2                    <pip>
+tomli                     2.0.1                     <pip>
+torch                     2.1.1+cu118               <pip>
+torchaudio                2.1.1+cu118               <pip>
+torchmetrics              1.3.1                     <pip>
+torchvision               0.16.1+cu118              <pip>
+tornado                   6.3.3            py39h5eee18b_0    anaconda
+tqdm                      4.66.2                    <pip>
+tqdm                      4.31.1                    <pip>
+traitlets                 5.7.1            py39h06a4308_0    anaconda
+traitlets                 5.14.1                    <pip>
+transformers              4.37.1                    <pip>
+triton                    2.1.0                     <pip>
+typing_extensions         4.7.1            py39h06a4308_0    anaconda
+typing_extensions         4.9.0                     <pip>
+tzdata                    2024.1                    <pip>
+tzdata                    2023d           h04d1e81_0.conda
+uritemplate               4.1.1                     <pip>
+urllib3                   1.26.18                   <pip>
+virtualhome               2.3.0                     <pip>
+wcwidth                   0.2.13                    <pip>
+wcwidth                   0.2.5              pyhd3eb1b0_0    anaconda
+Werkzeug                  3.0.1                     <pip>
+wheel                     0.41.2          py39h06a4308_0.conda
+XlsxWriter                3.2.0                     <pip>
+xz                        5.4.5           h5eee18b_0.conda
+yarl                      1.9.4                     <pip>
+zeromq                    4.3.4                h2531618_0    anaconda
+zipp                      3.11.0           py39h06a4308_0    anaconda
+zipp                      3.17.0                    <pip>
+zlib                      1.2.13          h5eee18b_0.conda

@@ -1,0 +1,15 @@
+{
+  "contract_version": "migration-observed-20260926",
+  "status": "observed_code_contract_not_run_attestation",
+  "source_script": "scripts/aboter.py",
+  "source_script_sha256": "42094fe525284b237398a91f58c5a35eaa272da08a51d3d7af17c02671f00ab1",
+  "cli_option": "--vabench_coord_mode=0_1",
+  "dataset_kwargs": {
+    "metric_mode": "mask",
+    "points_mode": "fixed",
+    "expected_points": 8,
+    "coord_mode": "normalized_0_1",
+    "post_prompt": "Your answer should be wrapped in <Answer><point>[[x1,y1],[x2,y2],[x3,y3],[x4,y4],[x5,y5],[x6,y6],[x7,y7],[x8,y8]]</point></Answer>, where each coordinate is a decimal between 0 and 1, normalized to the image width and height."
+  },
+  "warning": "Raw upstream YAML uses 0-1000; actual ABotER wrapper overrides prompt and coordinate decoder. Never run raw YAML as the aligned contract."
+}

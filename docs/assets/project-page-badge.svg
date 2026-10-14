@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="137.33" height="20" viewBox="0 0 206 30" role="img" aria-label="Project Page">
+  <title>Project Page</title>
+  <defs>
+    <linearGradient id="shine" x2="0" y2="100%"><stop stop-color="#fff" stop-opacity=".18"/><stop offset="1" stop-opacity=".10"/></linearGradient>
+    <clipPath id="round"><rect width="206" height="30" rx="4"/></clipPath>
+  </defs>
+  <g clip-path="url(#round)">
+    <path fill="#555" d="M0 0h39v30H0z"/>
+    <path fill="#76a522" d="M39 0h167v30H39z"/>
+    <path fill="url(#shine)" d="M0 0h206v30H0z"/>
+  </g>
+  <g fill="#fff" text-anchor="middle" font-family="Verdana,DejaVu Sans,sans-serif">
+    <text x="20" y="21" font-size="18">🌐</text>
+    <text x="122" y="21" font-size="16">Project Page</text>
+  </g>
+</svg>

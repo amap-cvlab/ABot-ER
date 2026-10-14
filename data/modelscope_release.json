@@ -1,0 +1,12 @@
+{
+  "repository": "amap_cvlab/ABot-ER-Training-Data",
+  "revision": "4afef1c8728fd11abec9a1e443162bd3dd3afe3b",
+  "release_version": "20261013_academic_jsonl_v3",
+  "checksums_sha256": "4ba7b0eb4288fd8b5d09cd16d3400a7c387f332304ad9a60f4fa39769af1de5a",
+  "release_manifest_sha256": "d60f694bdd61f0a36abfb38302c865bc11fafaabccf015fd3aefd1785cc37f7c",
+  "stages": {
+    "stage_a_pretrain": {"physical_records": 462385, "shards": 288},
+    "stage_b_posttrain": {"physical_records": 104960, "shards": 128}
+  },
+  "scope": "Published JSONL export, not byte-identical to historical training manifests. Media binaries are external."
+}

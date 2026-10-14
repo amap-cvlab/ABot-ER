@@ -1,0 +1,12 @@
+{
+  "revision": "REPLACE_WITH_IMMUTABLE_ASSET_MANIFEST_SHA256",
+  "paths": {
+    "et_benchmarks": "/your/ET-Plan-Bench/benchmark",
+    "et_simulator": "/your/tp-deps/ET-Plan-Bench/simulator",
+    "ai2thor_releases": "/your/tp-deps/AI2THOR/releases",
+    "alfred_data": "/your/EmbodiedBench/eb_alfred/data",
+    "habitat_data": "/your/EmbodiedBench/eb_habitat/data",
+    "habitat_datasets": "/your/EmbodiedBench/eb_habitat/datasets",
+    "navigation_datasets": "/your/EmbodiedBench/eb_navigation/datasets"
+  }
+}
