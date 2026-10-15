@@ -1,0 +1,57 @@
+[
+  {
+    "path": ".nojekyll",
+    "size": 1,
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "path": "app.js",
+    "size": 5316,
+    "sha256": "cdfd7112dd99e0cd8489a71194960f6d47086c8c96b8fc36d2c2d4eb297a632a"
+  },
+  {
+    "path": "assets/abot-logo.png",
+    "size": 600907,
+    "sha256": "c0f70c8504027c55648c762ef19b7dbbfbb3cc6b6807737b721e64495854cf1a"
+  },
+  {
+    "path": "assets/architecture.svg",
+    "size": 4931353,
+    "sha256": "dcd15151b36e516ef15e6896995596d6262c6084da6e15096a19d4c174c321a4"
+  },
+  {
+    "path": "assets/data-engine.svg",
+    "size": 2689204,
+    "sha256": "a187db2107f012abaf8f34c8c9f0a757ac6382ee01e31a096f107c03bef14bd7"
+  },
+  {
+    "path": "assets/deployment.jpg",
+    "size": 1012479,
+    "sha256": "073361f649b520a92948cb3e08d4a9ad0761599be6bfd0ef7131bcc270d5ecaa"
+  },
+  {
+    "path": "assets/favicon.svg",
+    "size": 762,
+    "sha256": "ab17feca2fd049da43afc5dcc27d4c962518f545b377f5454215f62208c43500"
+  },
+  {
+    "path": "assets/lab-mark.png",
+    "size": 4718,
+    "sha256": "2be70f3934d294bf540571ff114d8aa65ccfe29c5de5d24af7e26efaa5912b73"
+  },
+  {
+    "path": "index.html",
+    "size": 19755,
+    "sha256": "28e64e29a2bd6e47e2ba8808f353ed5eed8f88fe9e8b28b2ebe40f3b6b956309"
+  },
+  {
+    "path": "styles.css",
+    "size": 15080,
+    "sha256": "04b65a6fd55f3d36556425aaddfe41ad09f75e0d88179ca42106e40f4f55a338"
+  },
+  {
+    "path": "visual-refresh.css",
+    "size": 15629,
+    "sha256": "aaf0d574257daf885e649a98b8754217799a4c51293579985edbbf8e16b0b621"
+  }
+]

@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta name="description" content="ABot-ER: Unified Embodied Reasoning through Agentic Data–Model Co-Evolution.">
+  <title>ABot-ER · Unified Embodied Reasoning</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg?v=20261015-orbit">
+  <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="visual-refresh.css?v=20261015-badges-motion"><script src="app.js?v=20261015-badges-motion" defer></script>
+</head>
+<body>
+<div id="starfield" class="starfield" aria-hidden="true"></div>
+<a href="#main" class="skip">Skip to content</a>
+<header class="header"><div class="nav-wrap">
+ <a class="brand lab-brand" href="#" aria-label="ABot-ER home"><img src="assets/lab-mark.png" alt="" width="75" height="81"><span>AMAP CV LAB <span class="lab-divider" aria-hidden="true">|</span> <span class="lab-group">Alibaba Group</span></span></a>
+ <nav aria-label="Main navigation"><a href="#abstract">Abstract</a><a href="#overview">Overview</a><a href="#architecture">Method</a><a href="#data">Data & Training</a><a href="#results">Results</a><a href="#deployment">In the real world</a></nav>
+</div></header>
+<main id="main">
+ <section class="hero">
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="container hero-inner">
+   <div class="eyebrow"><span class="line"></span><span>Embodied intelligence · Technical report</span></div>
+   <h1 class="hero-wordmark" aria-label="ABot-ER"><img src="assets/abot-logo.png" alt="ABot" width="1433" height="641"><span aria-hidden="true">–ER</span></h1>
+   <h2>Unified Embodied Reasoning</h2>
+   <p class="hero-sub">through Agentic Data–Model Co-Evolution</p>
+   <p class="hero-description">One model to understand the scene, organize actions, and ground interaction targets.</p>
+   <div class="actions" aria-label="Project resources">
+    <a class="button primary" href="https://arxiv.org/pdf/2610.18355" target="_blank" rel="noopener">Technical Report · PDF</a>
+    <a class="button" href="https://arxiv.org/abs/2610.18355" target="_blank" rel="noopener">arXiv</a>
+    <a class="button" href="https://github.com/amap-cvlab/ABot-ER" target="_blank" rel="noopener noreferrer">Code · GitHub</a>
+    <a class="button" href="https://www.modelscope.cn/datasets/amap_cvlab/ABot-ER-Training-Data" target="_blank" rel="noopener noreferrer">Datasets · ModelScope</a>
+    <a class="button" href="https://www.modelscope.cn/collections/amap_cvlab/ABot-ER" target="_blank" rel="noopener noreferrer">Models · ModelScope</a>
+   </div>
+   <div class="hero-stats"><div><strong>3</strong><span>Perception · Planning · Grounding</span></div><div><strong>5</strong><span>Unified capability dimensions</span></div><div><strong>12</strong><span>Benchmarks, one model</span></div><div><strong>3<span>/3</span></strong><span>Leading competency averages</span></div><div><strong>9B</strong><span>One model. All capabilities.</span></div></div>
+   <p class="hero-note hero-advantage">One 9B model. Leading across perception, planning, and execution.</p>
+  </div>
+ </section>
+ <section id="abstract" class="section report-abstract container" aria-labelledby="abstract-title">
+  <div class="section-heading"><span class="abstract-badge">ABSTRACT</span><h2 id="abstract-title">Breadth and depth in unified embodied reasoning.</h2></div>
+  <div class="report-abstract-copy">
+   <p>We introduce ABot Embodied Reasoning (ABot-ER), a unified embodied reasoning foundation model that breaks the tension between breadth and depth in embodied reasoning. Embodied intelligence demands the joint mastery of perception, planning, and execution, yet reconciling generality with specialization across this spectrum remains an open challenge.</p>
+   <p>Within a single unified model, ABot-ER commands specialist-level depth across all three competencies, spanning spatial, scene, and temporal reasoning in perception; long-horizon action organization in planning; and point grounding and affordance in execution. The Agentic Data-Model Self-Evolution Engine continuously adapts data strategies to the model’s evolving capability state.</p>
+   <p>The Task-Conditioned Adaptive Training Strategy uses task tokens to activate lightweight low-rank residuals over a shared backbone, separating updates from heterogeneous output formats while retaining shared embodied knowledge. Across a systematic evaluation on twelve benchmarks covering three core competencies and five capability dimensions, ABot-ER achieves state-of-the-art overall performance across perception, planning, and execution within a unified parametric framework, demonstrating that breadth and depth can coexist in unified embodied reasoning.</p>
+  </div>
+ </section>
+ <section id="overview" class="section container">
+  <div class="section-heading"><span class="abstract-badge">OVERVIEW</span><h2>Breadth and depth. In one model.</h2><p>A reasoning interface between what a robot observes and what it does next.</p></div>
+  <div class="overview-layout"><div class="abstract"><p>ABot-ER brings perception, planning, and execution-oriented grounding into a shared vision-language model. Its agentic data engine revises supervision content, output protocols, and training mixtures in response to diagnosed capability gaps.</p><p>Task-conditioned low-rank residuals provide dedicated adaptation paths while the backbone continues to learn shared embodied knowledge. The released recipe uses one joint pre-training stage followed by one targeted post-training stage.</p><p class="boundary">ABot-ER predicts assessments, plans, and interaction coordinates—not motor commands. An agent runtime and downstream action policies handle physical execution.</p></div><div class="competency-panel"><div><span class="competency-tag">PERCEPTION</span><strong>Understand</strong><p>Spatial relations · Scene states · Temporal events</p></div><div><span class="competency-tag">PLANNING</span><strong>Organize</strong><p>Ordered, long-horizon action plans</p></div><div><span class="competency-tag">EXECUTION-ORIENTED</span><strong>Ground</strong><p>Points and affordances for interaction</p></div></div></div>
+  <div class="dimension-strip"><span>Spatial & Relational</span><span>Scene & State</span><span>Temporal & Event</span><span>Long-Horizon Action Org.</span><span>Point & Affordance</span></div>
+ </section>
+ <section id="architecture" class="section tinted"><div class="container">
+  <div class="section-heading"><span class="abstract-badge">METHOD</span><h2>Task-Conditioned Adaptive Training Strategy</h2><p>A single autoregressive backbone, with lightweight residuals selected once per sequence.</p></div>
+  <figure class="paper-figure"><button class="zoomable" data-image="assets/architecture.svg" aria-label="Enlarge model architecture"><img src="assets/architecture.svg" alt="ABot-ER architecture: multimodal input, shared decoder, task-conditioned Q/V residuals, and semantic, point and plan outputs" width="1320" height="780" loading="lazy"><span class="zoom-label">View figure</span></button><figcaption><span>Figure 3 · Task-conditioned residuals on the final four full-attention blocks of the 9B backbone.</span><span><code>[EQA]</code> in the figure denotes the question-answering route; the implementation uses <code>[2D_QA]</code>. Task planning uses <code>[TASK_PLAN]</code>.</span></figcaption></figure>
+  <div class="three-columns"><article><span class="card-number">01</span><h3>Unified multimodal input</h3><p>Images, video frames, instructions, and available state or history are encoded into one shared token sequence.</p></article><article><span class="card-number">02</span><h3>Two deterministic task routes</h3><p>Question answering and task planning select different residual factors. The route stays fixed during decoding; the language backbone remains shared and trainable.</p></article><article><span class="card-number">03</span><h3>Small adaptation footprint</h3><p>For 9B: rank and α both 16, on Q/V projections at zero-indexed layers 19, 23, 27, and 31. Vision encoder frozen; connector, decoder, and residuals trained together.</p></article></div>
+ </div></section>
+ <section id="data" class="section container">
+  <div class="section-heading"><span class="abstract-badge">DATA–MODEL CO-EVOLUTION</span><h2>Diagnose the gap. Evolve the data.</h2><p>Improve what is taught, how it is expressed, and how often it is seen—not just the number of training steps.</p></div>
+  <figure class="paper-figure"><button class="zoomable" data-image="assets/data-engine.svg" aria-label="Enlarge data evolution pipeline"><img src="assets/data-engine.svg" alt="Evaluation-driven loop: capability diagnosis, content/protocol/mixture evolution, governance, training and selection" width="960" height="540" loading="lazy"><span class="zoom-label">View figure</span></button><figcaption><span>Figure 4 · An evaluation-driven corpus revision loop, bounded by deterministic verification and data governance.</span></figcaption></figure>
+  <div class="three-columns mechanisms"><article><h3>Content evolution</h3><p>Repair missing or contradictory targets, anchor point labels to target regions, and retain verified multi-step planning supervision.</p></article><article><h3>Protocol evolution</h3><p>One normalized coordinate convention, with task-specific serialization. Freeze prompts and parsers before comparing checkpoints.</p></article><article><h3>Mixture evolution</h3><p>Reallocate exposure to diagnosed deficits while retaining replay. Track physical records and supervision tokens as distinct budgets.</p></article></div>
+  <p class="section-note"><a href="https://www.modelscope.cn/datasets/amap_cvlab/ABot-ER-Training-Data" target="_blank" rel="noopener noreferrer">Training data · ModelScope</a></p>
+  <div class="training-heading"><h3>The released two-stage recipe</h3><span>One Stage A + one Stage B per backbone</span></div>
+  <div class="stages"><article><span class="stage-label">STAGE A</span><h3>Cross-dimension foundation</h3><strong class="big-number">462,385</strong><span class="unit">physical records in the released dataset</span><div id="stage-a-bars" class="mixture-bars"></div></article><article><span class="stage-label">STAGE B</span><h3>Joint Post-Training</h3><strong class="big-number">52,480</strong><span class="unit">Unique training examples</span><p class="small">104,960 records in the released training mixture.</p><div class="stage-b-split"><div class="split-label"><span>EQA</span><strong>75%</strong></div><div class="split-track"><i></i></div><div class="split-label"><span>Task Planning</span><strong>25%</strong></div></div><p class="small">Shares by physical records. Planning contributes 63.76% of assistant supervision tokens, because structured plans are longer.</p></article></div>
+  <p class="section-note">Shared 9B settings: global batch 128 · BF16 · 8,192 tokens · ZeRO-3 · 32 GPUs. Optimizer and scheduler reset between stages. Source: Tables 16–18.</p>
+ </section>
+ <section id="results" class="section results-section"><div class="container">
+  <div class="section-heading"><span class="abstract-badge">EVALUATION</span><h2>One checkpoint. Three complementary strengths.</h2><p>The released ABot-ER 9B model leads the three competency means among the nine baselines listed in Table 8.</p></div>
+  <div class="aggregate-cards"><article><span>Perception · 7 benchmarks</span><strong>63.86</strong><p>+3.94 <span>vs. strongest listed baseline</span></p></article><article><span>Planning · 3 benchmarks</span><strong>41.61</strong><p>+4.20 <span>vs. strongest listed baseline</span></p></article><article><span>Execution · 2 benchmarks</span><strong>67.06</strong><p>+11.81 <span>vs. strongest listed baseline</span></p></article></div>
+  <div class="result-controls" role="group" aria-label="Filter benchmarks"><button class="active" data-filter="all" aria-pressed="true">All 12</button><button data-filter="perception" aria-pressed="false">Perception</button><button data-filter="planning" aria-pressed="false">Planning</button><button data-filter="execution" aria-pressed="false">Execution</button></div>
+  <div class="table-wrap"><table id="benchmark-table"><caption>Main results · same 9B checkpoint across all tasks</caption><thead><tr><th scope="col">Benchmark</th><th scope="col">ABot-ER 9B</th><th scope="col">Strongest listed baseline</th><th scope="col">Baseline score</th><th scope="col">Δ</th></tr></thead><tbody></tbody></table></div>
+  <p class="section-note">Bold blue values exceed the strongest baseline in Table 8. Scores are percentages / points as reported; benchmark metrics differ. EQA (9): 64.57. Planning (3): 41.61. These are report aggregates, not a live leaderboard.</p>
+  <details class="caveat"><summary>Evaluation scope & limitations</summary><p>Comparisons use the report's listed baselines and frozen snapshots, not every public model. Point-hit rates are not physical manipulation success. The audited VABench predictions repeat one location eight times and are not eight independent predictions. The report does not infer native feedback correction from the EB archives. See Sections 6.1–6.2 for full protocol and provenance caveats.</p></details>
+ </div></section>
+ <section id="models" class="section container"><div class="section-heading"><span class="abstract-badge">MODEL FAMILY</span><h2>One data recipe, across model scales.</h2><p>Dense models from 2B to 27B, plus a 35B MoE model with 3B active parameters. No size-specific rerun of the data-evolution loop.</p></div><div class="table-wrap"><table class="scale-table"><caption>One-pass recipe · Table 10</caption><thead><tr><th>Model size</th><th>EQA (9)</th><th>Planning (3)</th><th>Perception (7)</th><th>Execution (2)</th></tr></thead><tbody><tr><th>2B</th><td>55.20</td><td>34.14</td><td>55.79</td><td>53.13</td></tr><tr><th>4B</th><td>61.80</td><td>41.69</td><td>61.19</td><td>63.90</td></tr><tr class="selected"><th>9B <span class="mini-label">MAIN</span></th><td>64.57</td><td>41.61</td><td>63.86</td><td>67.06</td></tr><tr><th>27B</th><td class="best">66.23</td><td class="best">51.59</td><td class="best">65.64</td><td class="best">68.29</td></tr><tr><th>35B-A3B <span class="mini-label">MoE</span></th><td>65.39</td><td>46.48</td><td>65.04</td><td>66.62</td></tr></tbody></table></div><article class="model-weights-card" id="model-weights" aria-labelledby="weights-title">
+ <div class="weights-heading"><div><span class="kicker">MODELSCOPE · MODEL WEIGHTS</span><h3 id="weights-title">Model weights</h3></div><a class="private-label" href="https://www.modelscope.cn/collections/amap_cvlab/ABot-ER" target="_blank" rel="noopener noreferrer">Model collection</a></div>
+ <div class="table-wrap"><table class="weights-table"><thead><tr><th>Model</th><th>Weight size</th><th>ModelScope</th></tr></thead><tbody>
+<tr><th scope="row">ABot-ER-2B</th><td>4.45 GB</td><td><a class="model-repo-link" href="https://www.modelscope.cn/models/amap_cvlab/ABot-ER-2B" target="_blank" rel="noopener noreferrer">View model</a></td></tr>
+<tr><th scope="row">ABot-ER-4B</th><td>9.10 GB</td><td><a class="model-repo-link" href="https://www.modelscope.cn/models/amap_cvlab/ABot-ER-4B" target="_blank" rel="noopener noreferrer">View model</a></td></tr>
+<tr class="selected"><th scope="row">ABot-ER-9B</th><td>18.84 GB</td><td><a class="model-repo-link" href="https://www.modelscope.cn/models/amap_cvlab/ABot-ER-9B" target="_blank" rel="noopener noreferrer">View model</a></td></tr>
+<tr><th scope="row">ABot-ER-27B</th><td>54.74 GB</td><td><a class="model-repo-link" href="https://www.modelscope.cn/models/amap_cvlab/ABot-ER-27B" target="_blank" rel="noopener noreferrer">View model</a></td></tr>
+<tr><th scope="row">ABot-ER-35B-A3B</th><td>70.25 GB</td><td><a class="model-repo-link" href="https://www.modelscope.cn/models/amap_cvlab/ABot-ER-35B-A3B" target="_blank" rel="noopener noreferrer">View model</a></td></tr>
+ </tbody></table></div>
+ <p class="weights-note">Released models for embodied QA and task planning. Load each model with its matching task-conditioned configuration, tokenizer, and processor.</p>
+</article></section>
+ <section id="deployment" class="section tinted"><div class="container"><div class="section-heading"><span class="abstract-badge">REAL-WORLD INTERACTION</span><h2>Reasoning that connects to action.</h2><p>Real-world demonstrations on Galaxea R1 Pro, completing tasks in collaboration with ABot-AgentOS and ABot-M.</p></div><div class="deployment-layout"><figure class="paper-figure"><button class="zoomable" data-image="assets/deployment.jpg" aria-label="Enlarge real-world demonstrations"><img src="assets/deployment.jpg" alt="Galaxea R1 Pro demonstrations: block arithmetic with 6 + 9 = 15 and recognition of a valid paper hand gesture" width="1632" height="1056" loading="lazy"><span class="zoom-label">View figure</span></button><figcaption><span>Block arithmetic · Rock–paper–scissors</span></figcaption></figure><div class="demo-copy"><article><span class="stage-label">BLOCK ARITHMETIC</span><h3>Read the scene. Locate the next interaction.</h3><p>Recognize dot-coded numbers, interpret operand order, validate an expression, and locate grasp and placement targets.</p></article><article><span class="stage-label">ROCK–PAPER–SCISSORS</span><h3>Assess a gesture and its validity.</h3><p>Supply visual state information for the agent runtime to coordinate decisions and subsequent actions.</p></article></div></div></div></section>
+ <section id="citation" class="section container citation-section" aria-labelledby="citation-title">
+  <div class="section-heading"><span class="abstract-badge">CITATION</span><h2 id="citation-title">BibTeX</h2></div>
+  <div class="citation-card">
+   <div class="citation-toolbar"><span>ABot-ER · Technical Report</span><button id="copy-citation" type="button" aria-label="Copy BibTeX citation">Copy</button></div>
+   <pre tabindex="0" aria-label="BibTeX citation"><code id="citation-code">@misc{ding2026aboterunifiedembodiedreasoning,
+  title={ABot-ER: Unified Embodied Reasoning through Agentic Data-Model Co-Evolution},
+  author={Qiuyu Ding and Heng-Da Xu and Changda Xia and Jiajun Shen and Zihao Guan and Zhengchen Yuan and Jianfang Zhang and Di Yang and Jiayi Tian and Yuting Xu and Fei Wang and Shiao Liu and Wei Zhang and Xiaolong Wu and Wenbin Tang and Zedong Chu and Mu Xu},
+  year={2026},
+  eprint={2610.18355},
+  archivePrefix={arXiv},
+  primaryClass={cs.AI},
+  url={https://arxiv.org/abs/2610.18355},
+}</code></pre>
+   <p id="citation-status" class="citation-status" role="status" aria-live="polite"></p>
+  </div>
+ </section>
+ <section id="team" class="section team"><div class="container team-layout">
+  <div class="team-identity"><img class="team-logo" src="assets/abot-logo.png" alt="ABot" width="1433" height="641"><span class="kicker">AMAP CV LAB · ALIBABA GROUP</span><h2>The people behind the progress.</h2></div>
+  <div class="team-people"><div class="team-contributors"><h3>Core contributors</h3><ul><li>Qiuyu Ding</li><li>Hengda Xu</li><li>Zedong Chu</li><li>Changda Xia</li><li>Jiajun Shen</li></ul></div><div class="team-roles"><div><h3>Project lead</h3><p>Zedong Chu</p></div><div><h3>Advisors</h3><p>Mu Xu<span class="name-separator"> / </span>Wenbin Tang</p></div></div></div>
+ </div></section>
+</main>
+<footer><div class="container"><strong>ABot-ER</strong><a href="#">Back to top</a></div></footer>
+<dialog id="figure-dialog"><button class="close-dialog" aria-label="Close figure">×</button><img alt="Enlarged paper figure"><p>Press Esc or click outside to close</p></dialog>
+</body>
+</html>
