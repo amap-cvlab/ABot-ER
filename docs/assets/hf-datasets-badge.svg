@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="149.33" height="20" viewBox="0 0 224 30" role="img" aria-label="Hugging Face Datasets">
+  <title>Hugging Face Datasets</title>
+  <defs>
+    <linearGradient id="shine" x2="0" y2="100%"><stop stop-color="#fff" stop-opacity=".18"/><stop offset="1" stop-opacity=".10"/></linearGradient>
+    <clipPath id="round"><rect width="224" height="30" rx="4"/></clipPath>
+  </defs>
+  <g clip-path="url(#round)">
+    <path fill="#555" d="M0 0h128v30H0z"/>
+    <path fill="#d8a700" d="M128 0h96v30H128z"/>
+    <path fill="url(#shine)" d="M0 0h224v30H0z"/>
+  </g>
+  <g fill="#fff" text-anchor="middle" font-family="Verdana,DejaVu Sans,sans-serif" font-size="16">
+    <text x="64" y="21">Hugging Face</text>
+    <text x="176" y="21">Datasets</text>
+  </g>
+</svg>

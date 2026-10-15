@@ -11,6 +11,15 @@
 [![ModelScope Datasets](docs/assets/modelscope-datasets-badge.svg)](https://www.modelscope.cn/datasets/amap_cvlab/ABot-ER-Training-Data)
 [![ModelScope Models](docs/assets/modelscope-models-badge.svg)](https://www.modelscope.cn/collections/amap_cvlab/ABot-ER)
 
+[![Hugging Face Datasets](docs/assets/hf-datasets-badge.svg)](https://huggingface.co/datasets/acvlab/ABot-ER-Training-Data)
+[![Hugging Face 2B](docs/assets/hf-2b-badge.svg)](https://huggingface.co/acvlab/ABot-ER-2B)
+[![Hugging Face 4B](docs/assets/hf-4b-badge.svg)](https://huggingface.co/acvlab/ABot-ER-4B)
+[![Hugging Face 9B](docs/assets/hf-9b-badge.svg)](https://huggingface.co/acvlab/ABot-ER-9B)
+[![Hugging Face 27B](docs/assets/hf-27b-badge.svg)](https://huggingface.co/acvlab/ABot-ER-27B)
+[![Hugging Face 35B-A3B](docs/assets/hf-35b-a3b-badge.svg)](https://huggingface.co/acvlab/ABot-ER-35B-A3B)
+
+ABot-ER model pages and training data are now public on Hugging Face. The 35B-A3B page links to ModelScope for weight downloads.
+
 **English** | [简体中文](README.zh-CN.md)
 
 [Results](#benchmark-results) · [Models](#models) · [Datasets](#datasets) · [Setup](#setup) · [Training](#training) · [Evaluation](#evaluation) · [Documentation](docs/README.md)
@@ -21,7 +30,7 @@ ABot-ER brings embodied visual understanding and long-horizon task planning into
 
 This repository provides the **Task-Conditioned Adaptive Training Strategy** implementation, two-stage training recipes, versioned training-data manifests, and evaluation interfaces for nine embodied QA and three task-planning benchmarks.
 
-Models and training data are available through the ModelScope links in [Models](#models) and [Datasets](#datasets).
+Models and training data are available through the Hugging Face badges above and the ModelScope links in [Models](#models) and [Datasets](#datasets). The Hugging Face training-data repository includes both pre-training and post-training data.
 
 ## Overview
 

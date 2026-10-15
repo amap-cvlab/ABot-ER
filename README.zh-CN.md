@@ -11,6 +11,15 @@
 [![ModelScope 数据集](docs/assets/modelscope-datasets-badge.svg)](https://www.modelscope.cn/datasets/amap_cvlab/ABot-ER-Training-Data)
 [![ModelScope Models](docs/assets/modelscope-models-badge.svg)](https://www.modelscope.cn/collections/amap_cvlab/ABot-ER)
 
+[![Hugging Face Datasets](docs/assets/hf-datasets-badge.svg)](https://huggingface.co/datasets/acvlab/ABot-ER-Training-Data)
+[![Hugging Face 2B](docs/assets/hf-2b-badge.svg)](https://huggingface.co/acvlab/ABot-ER-2B)
+[![Hugging Face 4B](docs/assets/hf-4b-badge.svg)](https://huggingface.co/acvlab/ABot-ER-4B)
+[![Hugging Face 9B](docs/assets/hf-9b-badge.svg)](https://huggingface.co/acvlab/ABot-ER-9B)
+[![Hugging Face 27B](docs/assets/hf-27b-badge.svg)](https://huggingface.co/acvlab/ABot-ER-27B)
+[![Hugging Face 35B-A3B](docs/assets/hf-35b-a3b-badge.svg)](https://huggingface.co/acvlab/ABot-ER-35B-A3B)
+
+ABot-ER 系列模型页面及训练数据已在 Hugging Face 公开；35B-A3B 页面提供 ModelScope 权重下载链接。
+
 [English](README.md) | **简体中文**
 
 [实验结果](#实验结果) · [模型](#模型) · [数据集](#数据集) · [安装](#安装) · [训练](#训练) · [评测](#评测) · [文档](docs/README.md)
@@ -21,7 +30,7 @@ ABot-ER 在共享的视觉语言模型中联合建模具身视觉理解与长程
 
 本仓库提供 **Task-Conditioned Adaptive Training Strategy（任务条件自适应训练策略）**实现、两阶段训练配置、版本化训练数据清单，以及九项具身问答和三项任务规划基准的评测接口。
 
-模型与训练数据通过 ModelScope 提供，下载入口见[模型](#模型)与[数据集](#数据集)。
+模型与训练数据可通过上方 Hugging Face 标签及[模型](#模型)、[数据集](#数据集)中的 ModelScope 链接获取。预训练与后训练数据统一发布于同一个 Hugging Face 训练数据仓库。
 
 ## 项目概览
 
