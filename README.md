@@ -392,3 +392,17 @@ See [Third-party notices](THIRD_PARTY_NOTICES.md) for attribution and component-
 ## Acknowledgments
 
 ABot-ER builds on the Qwen model family, LLaMA-Factory/TuningFactory, and the benchmark implementations credited in the [third-party notices](THIRD_PARTY_NOTICES.md). We thank the maintainers of these models, datasets, and evaluation frameworks.
+
+## Citation
+
+```bibtex
+@misc{ding2026aboterunifiedembodiedreasoning,
+  title={ABot-ER: Unified Embodied Reasoning through Agentic Data-Model Co-Evolution},
+  author={Qiuyu Ding and Heng-Da Xu and Changda Xia and Jiajun Shen and Zihao Guan and Zhengchen Yuan and Jianfang Zhang and Di Yang and Jiayi Tian and Yuting Xu and Fei Wang and Shiao Liu and Wei Zhang and Xiaolong Wu and Wenbin Tang and Zedong Chu and Mu Xu},
+  year={2026},
+  eprint={2610.18355},
+  archivePrefix={arXiv},
+  primaryClass={cs.AI},
+  url={https://arxiv.org/abs/2610.18355},
+}
+```

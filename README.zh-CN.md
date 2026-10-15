@@ -392,3 +392,17 @@ ET-Plan-Bench、EB-ALFRED 和 EB-Habitat 需要各自的模拟器资源及推理
 ## 致谢
 
 ABot-ER 基于 Qwen 模型系列、LLaMA-Factory/TuningFactory，以及[第三方声明](THIRD_PARTY_NOTICES.md)中列出的基准实现构建。感谢相关模型、数据集和评测框架的维护者。
+
+## 引用
+
+```bibtex
+@misc{ding2026aboterunifiedembodiedreasoning,
+  title={ABot-ER: Unified Embodied Reasoning through Agentic Data-Model Co-Evolution},
+  author={Qiuyu Ding and Heng-Da Xu and Changda Xia and Jiajun Shen and Zihao Guan and Zhengchen Yuan and Jianfang Zhang and Di Yang and Jiayi Tian and Yuting Xu and Fei Wang and Shiao Liu and Wei Zhang and Xiaolong Wu and Wenbin Tang and Zedong Chu and Mu Xu},
+  year={2026},
+  eprint={2610.18355},
+  archivePrefix={arXiv},
+  primaryClass={cs.AI},
+  url={https://arxiv.org/abs/2610.18355},
+}
+```
