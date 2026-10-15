@@ -6,8 +6,13 @@
   },
   {
     "path": "app.js",
-    "size": 5316,
-    "sha256": "cdfd7112dd99e0cd8489a71194960f6d47086c8c96b8fc36d2c2d4eb297a632a"
+    "size": 6023,
+    "sha256": "5179bea20de26da2847c9880584bbdebb9ad94d489252d5f8897ad105137d878"
+  },
+  {
+    "path": "assets/abot-logo-700.webp",
+    "size": 53882,
+    "sha256": "64147e514684e4bf235ba04896c620df32b04fb476b4ee4c48d116b0abe68b26"
   },
   {
     "path": "assets/abot-logo.png",
@@ -15,9 +20,39 @@
     "sha256": "c0f70c8504027c55648c762ef19b7dbbfbb3cc6b6807737b721e64495854cf1a"
   },
   {
+    "path": "assets/architecture-1600.webp",
+    "size": 139732,
+    "sha256": "f392af96c4a06f1bd32f0966a3eee385ec1079266407ec3a6cd72fec21d16e25"
+  },
+  {
+    "path": "assets/architecture-2640.webp",
+    "size": 253282,
+    "sha256": "40a0fe225bc5e147f76a072d83c5a46ca84a7fb18cecee78ddf2ad0c22bc5678"
+  },
+  {
+    "path": "assets/architecture-960.webp",
+    "size": 71128,
+    "sha256": "f1916486b071d5653e005f8b6e1cb64ee21ee71347a695d758e608796c9c3113"
+  },
+  {
     "path": "assets/architecture.svg",
     "size": 4931353,
     "sha256": "dcd15151b36e516ef15e6896995596d6262c6084da6e15096a19d4c174c321a4"
+  },
+  {
+    "path": "assets/data-engine-1600.webp",
+    "size": 182912,
+    "sha256": "da952fd564358345a92518527753751662a31ae4b70caea12ea5b4c5cb3c6a64"
+  },
+  {
+    "path": "assets/data-engine-2400.webp",
+    "size": 271390,
+    "sha256": "15cbb4627049800b3331aa89aac36b81d9b765df73096a82d49982c8f0587679"
+  },
+  {
+    "path": "assets/data-engine-960.webp",
+    "size": 93120,
+    "sha256": "9b4756c3a1e403e498f4045807d7c49f2444731e97272beb4d47e5547db8cbaa"
   },
   {
     "path": "assets/data-engine.svg",
@@ -41,8 +76,8 @@
   },
   {
     "path": "index.html",
-    "size": 19755,
-    "sha256": "28e64e29a2bd6e47e2ba8808f353ed5eed8f88fe9e8b28b2ebe40f3b6b956309"
+    "size": 20343,
+    "sha256": "ce26c205fbdc1178e6a9d1d80fac4401690aea3d75f5061a2aa76400ce4e3e00"
   },
   {
     "path": "styles.css",

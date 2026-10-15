@@ -76,10 +76,27 @@ document.querySelectorAll('[data-filter]').forEach(button => button.addEventList
 const composition = [['Spatial & Relational',31.34],['Scene & State',32.61],['Temporal & Event',2.57],['Point & Affordance',23.92],['Long-Horizon Action',9.56]];
 document.querySelector('#stage-a-bars').innerHTML = composition.map(([label,share]) => `<div class="mixture-row"><span>${label}</span><div class="bar"><i style="width:${share / 32.61 * 100}%"></i></div><span>${share.toFixed(2)}%</span></div>`).join('');
 const dialog = document.querySelector('#figure-dialog');
+let figureRequest = 0;
 document.querySelectorAll('.zoomable').forEach(button => button.addEventListener('click', () => {
-  dialog.querySelector('img').src = button.dataset.image;
-  dialog.querySelector('img').alt = button.querySelector('img').alt;
+  const request = ++figureRequest;
+  const preview = button.querySelector('img');
+  const enlarged = dialog.querySelector('img');
+  const status = dialog.querySelector('p');
+  enlarged.src = preview.currentSrc || preview.src;
+  enlarged.alt = preview.alt;
+  status.textContent = 'Loading high-resolution figure… Press Esc or click outside to close.';
   dialog.showModal();
+  const fullSize = new Image();
+  fullSize.onload = () => {
+    if (request !== figureRequest || !dialog.open) return;
+    enlarged.src = fullSize.src;
+    status.textContent = 'Press Esc or click outside to close';
+  };
+  fullSize.onerror = () => {
+    if (request !== figureRequest || !dialog.open) return;
+    status.textContent = 'Showing preview. High-resolution download failed; close and reopen to retry.';
+  };
+  fullSize.src = button.dataset.image;
 }));
 dialog.querySelector('.close-dialog').addEventListener('click', () => dialog.close());
 dialog.addEventListener('click', event => {if (event.target === dialog) {const r=dialog.getBoundingClientRect(); if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom) dialog.close();}});

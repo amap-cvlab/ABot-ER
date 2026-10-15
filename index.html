@@ -6,7 +6,8 @@
   <meta name="description" content="ABot-ER: Unified Embodied Reasoning through Agentic Data–Model Co-Evolution.">
   <title>ABot-ER · Unified Embodied Reasoning</title>
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg?v=20261015-orbit">
-  <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="visual-refresh.css?v=20261015-badges-motion"><script src="app.js?v=20261015-badges-motion" defer></script>
+  <link rel="preload" as="image" href="assets/abot-logo-700.webp" type="image/webp" fetchpriority="high">
+  <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="visual-refresh.css?v=20261015-badges-motion"><script src="app.js?v=20261015-image-loading" defer></script>
 </head>
 <body>
 <div id="starfield" class="starfield" aria-hidden="true"></div>
@@ -20,7 +21,7 @@
   <div class="hero-grid" aria-hidden="true"></div>
   <div class="container hero-inner">
    <div class="eyebrow"><span class="line"></span><span>Embodied intelligence · Technical report</span></div>
-   <h1 class="hero-wordmark" aria-label="ABot-ER"><img src="assets/abot-logo.png" alt="ABot" width="1433" height="641"><span aria-hidden="true">–ER</span></h1>
+   <h1 class="hero-wordmark" aria-label="ABot-ER"><img src="assets/abot-logo-700.webp" alt="ABot" width="700" height="313" fetchpriority="high" decoding="async"><span aria-hidden="true">–ER</span></h1>
    <h2>Unified Embodied Reasoning</h2>
    <p class="hero-sub">through Agentic Data–Model Co-Evolution</p>
    <p class="hero-description">One model to understand the scene, organize actions, and ground interaction targets.</p>
@@ -50,12 +51,12 @@
  </section>
  <section id="architecture" class="section tinted"><div class="container">
   <div class="section-heading"><span class="abstract-badge">METHOD</span><h2>Task-Conditioned Adaptive Training Strategy</h2><p>A single autoregressive backbone, with lightweight residuals selected once per sequence.</p></div>
-  <figure class="paper-figure"><button class="zoomable" data-image="assets/architecture.svg" aria-label="Enlarge model architecture"><img src="assets/architecture.svg" alt="ABot-ER architecture: multimodal input, shared decoder, task-conditioned Q/V residuals, and semantic, point and plan outputs" width="1320" height="780" loading="lazy"><span class="zoom-label">View figure</span></button><figcaption><span>Figure 3 · Task-conditioned residuals on the final four full-attention blocks of the 9B backbone.</span><span><code>[EQA]</code> in the figure denotes the question-answering route; the implementation uses <code>[2D_QA]</code>. Task planning uses <code>[TASK_PLAN]</code>.</span></figcaption></figure>
+  <figure class="paper-figure"><button class="zoomable" data-image="assets/architecture-2640.webp" aria-label="Enlarge model architecture"><img src="assets/architecture-1600.webp" srcset="assets/architecture-960.webp 960w, assets/architecture-1600.webp 1600w" sizes="(max-width: 740px) calc(100vw - 68px), (max-width: 1224px) calc(100vw - 96px), 1128px" alt="ABot-ER architecture: multimodal input, shared decoder, task-conditioned Q/V residuals, and semantic, point and plan outputs" width="1320" height="780" loading="lazy" decoding="async"><span class="zoom-label">View figure</span></button><figcaption><span>Figure 3 · Task-conditioned residuals on the final four full-attention blocks of the 9B backbone.</span><span><code>[EQA]</code> in the figure denotes the question-answering route; the implementation uses <code>[2D_QA]</code>. Task planning uses <code>[TASK_PLAN]</code>.</span></figcaption></figure>
   <div class="three-columns"><article><span class="card-number">01</span><h3>Unified multimodal input</h3><p>Images, video frames, instructions, and available state or history are encoded into one shared token sequence.</p></article><article><span class="card-number">02</span><h3>Two deterministic task routes</h3><p>Question answering and task planning select different residual factors. The route stays fixed during decoding; the language backbone remains shared and trainable.</p></article><article><span class="card-number">03</span><h3>Small adaptation footprint</h3><p>For 9B: rank and α both 16, on Q/V projections at zero-indexed layers 19, 23, 27, and 31. Vision encoder frozen; connector, decoder, and residuals trained together.</p></article></div>
  </div></section>
  <section id="data" class="section container">
   <div class="section-heading"><span class="abstract-badge">DATA–MODEL CO-EVOLUTION</span><h2>Diagnose the gap. Evolve the data.</h2><p>Improve what is taught, how it is expressed, and how often it is seen—not just the number of training steps.</p></div>
-  <figure class="paper-figure"><button class="zoomable" data-image="assets/data-engine.svg" aria-label="Enlarge data evolution pipeline"><img src="assets/data-engine.svg" alt="Evaluation-driven loop: capability diagnosis, content/protocol/mixture evolution, governance, training and selection" width="960" height="540" loading="lazy"><span class="zoom-label">View figure</span></button><figcaption><span>Figure 4 · An evaluation-driven corpus revision loop, bounded by deterministic verification and data governance.</span></figcaption></figure>
+  <figure class="paper-figure"><button class="zoomable" data-image="assets/data-engine-2400.webp" aria-label="Enlarge data evolution pipeline"><img src="assets/data-engine-1600.webp" srcset="assets/data-engine-960.webp 960w, assets/data-engine-1600.webp 1600w" sizes="(max-width: 740px) calc(100vw - 68px), (max-width: 1224px) calc(100vw - 96px), 1128px" alt="Evaluation-driven loop: capability diagnosis, content/protocol/mixture evolution, governance, training and selection" width="960" height="540" loading="lazy" decoding="async"><span class="zoom-label">View figure</span></button><figcaption><span>Figure 4 · An evaluation-driven corpus revision loop, bounded by deterministic verification and data governance.</span></figcaption></figure>
   <div class="three-columns mechanisms"><article><h3>Content evolution</h3><p>Repair missing or contradictory targets, anchor point labels to target regions, and retain verified multi-step planning supervision.</p></article><article><h3>Protocol evolution</h3><p>One normalized coordinate convention, with task-specific serialization. Freeze prompts and parsers before comparing checkpoints.</p></article><article><h3>Mixture evolution</h3><p>Reallocate exposure to diagnosed deficits while retaining replay. Track physical records and supervision tokens as distinct budgets.</p></article></div>
   <p class="section-note"><a href="https://www.modelscope.cn/datasets/amap_cvlab/ABot-ER-Training-Data" target="_blank" rel="noopener noreferrer">Training data · ModelScope</a></p>
   <div class="training-heading"><h3>The released two-stage recipe</h3><span>One Stage A + one Stage B per backbone</span></div>
@@ -99,7 +100,7 @@
   </div>
  </section>
  <section id="team" class="section team"><div class="container team-layout">
-  <div class="team-identity"><img class="team-logo" src="assets/abot-logo.png" alt="ABot" width="1433" height="641"><span class="kicker">AMAP CV LAB · ALIBABA GROUP</span><h2>The people behind the progress.</h2></div>
+  <div class="team-identity"><img class="team-logo" src="assets/abot-logo-700.webp" alt="ABot" width="700" height="313" loading="lazy" decoding="async"><span class="kicker">AMAP CV LAB · ALIBABA GROUP</span><h2>The people behind the progress.</h2></div>
   <div class="team-people"><div class="team-contributors"><h3>Core contributors</h3><ul><li>Qiuyu Ding</li><li>Hengda Xu</li><li>Zedong Chu</li><li>Changda Xia</li><li>Jiajun Shen</li></ul></div><div class="team-roles"><div><h3>Project lead</h3><p>Zedong Chu</p></div><div><h3>Advisors</h3><p>Mu Xu<span class="name-separator"> / </span>Wenbin Tang</p></div></div></div>
  </div></section>
 </main>
