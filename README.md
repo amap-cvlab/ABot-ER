@@ -12,11 +12,7 @@
 [![ModelScope Models](docs/assets/modelscope-models-badge.svg)](https://www.modelscope.cn/collections/amap_cvlab/ABot-ER)
 
 [![Hugging Face Datasets](docs/assets/hf-datasets-badge.svg)](https://huggingface.co/datasets/acvlab/ABot-ER-Training-Data)
-[![Hugging Face 2B](docs/assets/hf-2b-badge.svg)](https://huggingface.co/acvlab/ABot-ER-2B)
-[![Hugging Face 4B](docs/assets/hf-4b-badge.svg)](https://huggingface.co/acvlab/ABot-ER-4B)
-[![Hugging Face 9B](docs/assets/hf-9b-badge.svg)](https://huggingface.co/acvlab/ABot-ER-9B)
-[![Hugging Face 27B](docs/assets/hf-27b-badge.svg)](https://huggingface.co/acvlab/ABot-ER-27B)
-[![Hugging Face 35B-A3B](docs/assets/hf-35b-a3b-badge.svg)](https://huggingface.co/acvlab/ABot-ER-35B-A3B)
+[![Hugging Face Collection](docs/assets/hf-collection-badge.svg)](https://huggingface.co/collections/acvlab/abot-er)
 
 ABot-ER model pages and training data are now public on Hugging Face. The 35B-A3B page links to ModelScope for weight downloads.
 
