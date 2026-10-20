@@ -12,7 +12,7 @@
 [![ModelScope Models](docs/assets/modelscope-models-badge.svg)](https://www.modelscope.cn/collections/amap_cvlab/ABot-ER)
 
 [![Hugging Face Datasets](docs/assets/hf-datasets-badge.svg)](https://huggingface.co/datasets/acvlab/ABot-ER-Training-Data)
-[![Hugging Face Collection](docs/assets/hf-collection-badge.svg)](https://huggingface.co/collections/acvlab/abot-er)
+[![Hugging Face Models](docs/assets/hf-models-badge.svg)](https://huggingface.co/collections/acvlab/abot-er)
 
 ABot-ER 系列模型页面及训练数据已在 Hugging Face 公开；35B-A3B 页面提供 ModelScope 权重下载链接。
 
